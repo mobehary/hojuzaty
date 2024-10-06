@@ -7,7 +7,59 @@
 }
 
 @media(max-width: 550px) {
-
+    .retrive{
+        .content{
+            img{
+                height: 200px;
+            }
+            h3{
+                font-size: 30px;
+            }
+            h5{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    .home-header{
+        height: 850px;
+    }
+    .d-none-sm{
+        display: none;
+    }
+    .text-center-sm{
+        text-align: center;
+    }
+    .mx-auto-sm{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .est2nas-content{
+        border-radius: 5px;
+        h4{
+            font-size: 18px;
+        }
+        h2{
+            font-size: 36px;
+        }
+    }
+    .title-div{
+        .sub-title{
+            margin-bottom: 15px;
+        }
+        .main-title{
+            h3{
+                color: $primary-color;
+                font-size: 24px;
+                a{
+                    color: #532259;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 @media(max-width: 767px) {
 
@@ -22,18 +74,65 @@
 }
 
 @media(max-width: 990px){
-
+    .hero-content{
+        .hero-title{
+            font-size: 34px;
+        }
+        .hero-description{
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+    }
+    .offcanvas{
+        background-color: $primary-color;
+        .btn-close{
+            filter: invert(1);
+        }
+    }
+    .hero-content{
+        .hero-tabs{
+            .nav-link{
+                font-size: 16px;
+            }
+            .radios{
+                .form-group{
+                    margin-inline-end: 18px;
+                }
+                label{
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
 }
 
 @media(min-width: 768px) and (max-width: 990px){
+    .esta2nas{
+        .est2nas-content {
+            background-color: #E4F5FB;
+            padding: 10px 50px;
+        }   
+    }
+    .home-header{
+        height: 70vh;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1199px){
     
 }
 @media(min-width: 991px) and (max-width: 1199px){
-    
+    nav{
+        ul{
+            .nav-item{
+                margin: 0px;
+            }
+        }
+    }
 }
 @media(min-width: 1200px) and (max-width: 1599px){
     
 }
 @media(min-width: 1600px){
-    
+
 }

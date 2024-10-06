@@ -1,17 +1,18 @@
-$primary-color: #333333;
-$light-primary-color: #E58411;
+$primary-color: #000;
+$light-primary-color: #666666;
 $secondary-color: #FFFFFF;
-$acent-color: #F8F8F8;
+$acent-color: #2BB2E1;
 $font-color: #A5A5A5;
-
-@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-size: 16px;
-    font-family: 'Alexandria', sans-serif;
+}
+
+[lang="en"] *{
+    font-family: 'Helvetica';
 }
 
 .overlay-background{
@@ -43,10 +44,10 @@ $font-color: #A5A5A5;
 }
 
 input[type='radio'] {
-    accent-color: $primary-color;
+    accent-color: $acent-color;
 }
 input[type='checkbox'] {
-    accent-color: $primary-color;
+    accent-color: $acent-color;
 }
 
 .navbar-toggler-icon{
@@ -210,7 +211,8 @@ a{
         }
     }
     span.current{
-        color: #adadad;
+        color: $light-primary-color;
+        font-size: 14px;
     }
 }
 
@@ -303,13 +305,27 @@ a{
 
 input{
     height: 50px;
-    border-radius: 12px !important;
+    border-radius: 5px;
     overflow: visible;
     &::placeholder{
-        color: #adadad !important;
+        color: $light-primary-color !important;
         font-size: 14px;
     }
 }
+.input-group-text{
+    background-color: #FFF;
+    padding-inline-end: 0px;
+}
+
+.niceSelect{
+    height: 50px;
+}
+
+.included-input{
+    border-left: none;
+    border-radius: 0px 5px 5px 0px !important;
+}
+
 select{
     height: 50px;
     border-radius: 12px !important;
@@ -335,31 +351,15 @@ p{
 
 .form-control:focus{
     box-shadow: unset !important;
-    border-color: $primary-color;
+    border-color: $secondary-color;
 }
 .form-group{
     margin-bottom: 10px;
 }
 
 section{
-    padding: 70px 0px;
+    padding: 40px 0px;
 }
-
-.main-title{
-    color: $primary-color;
-    @extend .font-xxl;
-    @extend .fw-lg;
-    line-height: 2;
-    &::after {
-        content: '';
-        display: block;
-        width: 25px;
-        height: 2px;
-        background: $light-primary-color;
-    }
-}
-
-
 
 @media(max-width: 550px){
     .font-xxs{
@@ -473,6 +473,10 @@ section{
     }
 }
 
+.font-transparent{
+    color: transparent !important;
+}
+
 .border-top-none{
     border-top: none !important;
 }
@@ -498,6 +502,20 @@ section{
     background: #d2d2d2;
   }
 
+  @media(max-width: 550px) {
+    [lang="en"] .offcanvas.offcanvas-start{
+        right: unset;
+        padding-left: unset;
+        left: 100px;
+        padding-right: 100px;
+    }
+}
+
 @media(min-width: 551px) and (max-width: 990px){
-    
+    [lang="en"] .offcanvas.offcanvas-start{
+        right: 0;
+        padding-left: unset;
+        left: unset;
+        padding-right: 0px;
+    }
 }

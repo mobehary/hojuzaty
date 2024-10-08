@@ -74,6 +74,21 @@
 }
 
 @media(max-width: 990px){
+    .internal-header{
+        .internal-title{
+            h4{
+                font-size: 24px;
+            }
+        }
+    }
+    .account{
+        .auth-card{
+            padding: 20px 5px;
+        }
+    }
+    .login-text{
+        display: none;
+    }
     .hero-content{
         .hero-title{
             font-size: 34px;

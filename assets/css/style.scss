@@ -113,6 +113,7 @@ nav{
     border: 2px solid;
     border-color: #D0D0D0;
     border-radius: 5px;
+    overflow: hidden;
     i{
         color: #4EAC46;
     }
@@ -456,6 +457,29 @@ footer{
         }
     }
 }
+
+.login-text{
+    display: flex;
+    align-items: center;
+    padding: 55px;
+    .content{
+        img{
+            height: 350px;
+            object-fit: contain;
+        }
+        h5{
+            font-size: 24px;
+            font-weight: 500;
+            color: $primary-color;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            color: $primary-color;
+        }
+    }
+}
+
 .intl-tel-input,
 .iti{
   width: 100%;

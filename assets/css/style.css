@@ -823,6 +823,7 @@ nav .dropdown-item {
   border: 2px solid;
   border-color: #D0D0D0;
   border-radius: 5px;
+  overflow: hidden;
 }
 .currency i {
   color: #4EAC46;
@@ -1156,6 +1157,27 @@ footer .lower-footer {
   color: #2BB2E1;
 }
 
+.login-text {
+  display: flex;
+  align-items: center;
+  padding: 55px;
+}
+.login-text .content img {
+  height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.login-text .content h5 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+}
+.login-text .content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+
 .intl-tel-input,
 .iti {
   width: 100%;
@@ -1213,6 +1235,15 @@ footer .lower-footer {
   }
 }
 @media (max-width: 990px) {
+  .internal-header .internal-title h4 {
+    font-size: 24px;
+  }
+  .account .auth-card {
+    padding: 20px 5px;
+  }
+  .login-text {
+    display: none;
+  }
   .hero-content .hero-title {
     font-size: 34px;
   }

@@ -1160,7 +1160,7 @@ footer .lower-footer {
 .login-text {
   display: flex;
   align-items: center;
-  padding: 55px;
+  padding: 0px 55px;
 }
 .login-text .content img {
   height: 350px;

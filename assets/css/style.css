@@ -180,11 +180,11 @@
 }
 
 input[type=radio] {
-  accent-color: #2BB2E1;
+  accent-color: #239cc6;
 }
 
 input[type=checkbox] {
-  accent-color: #2BB2E1;
+  accent-color: #239cc6;
 }
 
 .navbar-toggler-icon {
@@ -220,7 +220,7 @@ a {
 }
 
 .text-acent {
-  color: #2BB2E1 !important;
+  color: #239cc6 !important;
 }
 
 .text-default {
@@ -240,7 +240,7 @@ a {
 }
 
 .bg-acent {
-  background-color: #2BB2E1 !important;
+  background-color: #239cc6 !important;
 }
 
 .bg-default {
@@ -544,7 +544,7 @@ textarea option {
 }
 
 p {
-  line-height: 1.9;
+  line-height: 1.7;
 }
 
 .form-control:focus {
@@ -730,8 +730,17 @@ section {
   width: 100%;
 }
 
+.breadcrumb-div {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.breadcrumb-div .current-page {
+  color: #D5D5D5;
+}
+
 .internal-header {
-  background-image: url(../images/internal-header.jpeg), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   background-size: cover;
   background-position: center center;
   height: 300px;
@@ -773,6 +782,30 @@ section {
   font-size: 18px;
 }
 
+.account .main-btn {
+  height: 65px !important;
+}
+
+#login-otp form {
+  margin-top: 30px;
+}
+#login-otp .verification-code--inputs {
+  direction: ltr;
+  margin-top: 10px;
+  width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+#login-otp .verification-code--inputs input {
+  font-weight: bold;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px !important;
+  border: 1px solid #9A9A9A;
+  text-align: center;
+}
+
 a.main-btn {
   display: flex;
   align-items: center;
@@ -806,11 +839,11 @@ nav ul .nav-item .nav-link {
   transition: all 0.3s;
 }
 nav ul .nav-item .nav-link:hover, nav ul .nav-item .nav-link:active {
-  color: #2BB2E1 !important;
+  color: #239cc6 !important;
   transition: all 0.3s;
 }
 nav ul .nav-item .nav-link.active {
-  color: #2BB2E1 !important;
+  color: #239cc6 !important;
 }
 nav .dropdown-item {
   padding: 0px;
@@ -984,6 +1017,29 @@ i {
   border-radius: 50%;
 }
 
+.static-page .main-title h3 {
+  font-size: 28px;
+  color: #000;
+}
+
+.services {
+  padding: 0;
+}
+.services .service-div {
+  padding: 30px 0px;
+}
+.services .odd-div {
+  background-color: #F7F7F7;
+}
+.services .even-div {
+  background-color: #FFFFFF;
+}
+.services .title-div h3 {
+  color: #000;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
 .offer-card {
   border: 1px solid #DEDEDE;
   border-radius: 5px;
@@ -1155,6 +1211,10 @@ footer .lower-footer {
 }
 .account .auth-card h5 a {
   color: #2BB2E1;
+}
+
+.iti__search-input {
+  padding: 10px 20px !important;
 }
 
 .login-text {

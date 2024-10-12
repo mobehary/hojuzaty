@@ -1,7 +1,7 @@
 $primary-color: #000;
 $light-primary-color: #666666;
 $secondary-color: #FFFFFF;
-$acent-color: #2BB2E1;
+$acent-color: #239cc6;
 $font-color: #A5A5A5;
 
 *{
@@ -346,7 +346,7 @@ textarea{
 p{
     @extend .fw-normal;
     @extend .font-normal;
-    line-height: 1.9;
+    line-height: 1.7;
 }
 
 .form-control:focus{

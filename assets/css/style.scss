@@ -14,8 +14,18 @@
     background-blend-mode: multiply;
     animation: slider-animate 10s infinite alternate;
 }
+
+.breadcrumb-div{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .current-page{
+        color: #D5D5D5;
+    }
+}
+
 .internal-header{
-    background-image: url(../images/internal-header.jpeg), linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
     background-size: cover;
     background-position: center center;
     height: 300px;
@@ -57,6 +67,32 @@
     color: $secondary-color;
     border-radius: 5px;
     font-size: 18px;
+}
+
+.account .main-btn{
+    height: 65px !important;
+}
+
+#login-otp{
+    form{
+        margin-top: 30px;
+    }
+    .verification-code--inputs{
+        direction: ltr;
+        margin-top: 10px;
+        width: 250px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 100%;
+        input{
+            font-weight: bold;
+            height: 50px;
+            width: 50px;
+            border-radius: 5px !important;
+            border: 1px solid #9A9A9A;
+            text-align: center;
+        }
+    }
 }
 
 a.main-btn{
@@ -276,6 +312,36 @@ i{
     }
 }
 
+.static-page{
+    .main-title{
+        h3{
+            font-size: 28px;
+            color: $primary-color;
+        }
+    }
+}
+
+.services{
+    padding: 0;
+    .service-div{
+        padding: 30px 0px;
+    }
+    .odd-div{
+        background-color: #F7F7F7;
+    }
+    
+    .even-div{
+        background-color: #FFFFFF;
+    }
+    .title-div{
+        h3{
+            color: $primary-color;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
 .offer-card{
     border: 1px solid #DEDEDE;
     border-radius: 5px;
@@ -456,6 +522,10 @@ footer{
             }
         }
     }
+}
+
+.iti__search-input{
+    padding: 10px 20px !important;
 }
 
 .login-text{

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/select2.css">
+  <link rel="stylesheet" href="assets/css/intlTelInput.css">
+  <link rel="stylesheet" href="assets/css/flatPicker.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/fancybox.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Hojuzaty | Reset Password</title>
+</head>
+
+<body>
+  <header class="internal-header position-relative" style="background-image: url(assets/images/internal-header.jpeg), linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));">
+    <nav class="navbar navbar-expand-lg py-4">
+    <div class="container">
+        <a class="navbar-brand" href="/"><img src="assets/images/Logo.png"  class="of-contain logo main-logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="assets/images/main-logo.svg" class="of-contain" alt=""></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body justify-content-md-between">
+            <ul class="navbar-nav justify-content-between w-100">
+            <div class="d-lg-flex d-xl-flex flex-wrap align-items-center">
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="flights.html">Flights</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="hotels.html">Hotels</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="wayana.html">Wayana</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="charter_flights.html">Charter Flights</a>
+                </li>
+            </div>
+            <div class="d-lg-flex d-xl-flex flex-wrap align-items-center">
+                <li class="nav-item">
+                <a class="nav-link text-decoration-underline" aria-current="page" href="retrive-my-book.html">Retrieve My Booking</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="sign-in.html">
+                    <img src="assets/images/icons/User.svg" height="20px" class="of-contain me-1" alt="">
+                    <span>Sign In</span>
+                </a>
+                </li>
+                <!-- <li class="nav-item">
+                <a class="nav-link registered-link" href="profile.html" >
+                    <div class="default-profile-picture">
+                    M
+                    </div>
+                    <span class="text-secondary">Welcome, Mohamed</span>
+                </a>
+                </li> -->
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    EGP
+                </a>
+                <ul class="dropdown-menu px-3">
+                    <span class="font-sm">Currency</span>
+                    <li class="my-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency selected">
+                        <img src="assets/images/flags/egy.webp" alt="">
+                        <span>Egyptian Pound (EGP)</span>
+                        <i class="ms-2 far fa-check-circle"></i>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/ksa.png" alt="">
+                        <span>Saudi Riyal (SAR)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/uae.png" alt="">
+                        <span>Emirati Dirham (AED)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/usa.png" alt="">
+                        <span>US Dollar (USD)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/euro.png" alt="">
+                        <span>Euro (EUR)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/uk.png" alt="">
+                        <span>Pound (POD)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/qatar.png" alt="">
+                        <span>Qatari Riyal (QAR)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/kuw.webp" alt="">
+                        <span>Kuwaiti Dinar (KWD)</span>
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/images/flags/uk.png" class="language-logo me-1" alt="">
+                    <span>EN</span>
+                </a>
+                <ul class="dropdown-menu px-3">
+                    <span class="font-sm">Language</span>
+                    <li class="my-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/egy.webp" alt="">
+                        <span>العربية</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency selected">
+                        <img src="assets/images/flags/uk.png" alt="">
+                        <span>English</span>
+                        <i class="ms-2 far fa-check-circle"></i>
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+                </li>
+            </div>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="d-flex align-items-center justify-content-center internal-title">
+      <div class="container">
+        <h4 class="text-secondary text-center">Begin Your Journey with Us Today</h4>
+      </div>
+    </div>
+  </header>
+
+  <section class="account">
+    <div class="container">
+        <div class="content">
+          <div class="row">
+            <div class="col-md-12 col-lg-6 col-xl-6 col-12 mb-3-sm">
+              <div class="auth-card">
+                <h3 class="text-center text-primary font-xl">Enter Digit Code Sent To <span class="text-center text-light-primary font-xl">+966 563 325 652</span></h3>
+                <div class="mt-3 ">
+                  <div class="form-group">
+                    <div class="verification-code" id="login-otp">
+                      <form action="reset-password.html" class="otp-form">
+                        <h4 class="font-regular text-center text-primary mt-3">Verification Code</h4>
+                        <div class="verification-code--inputs d-flex align-items-center justify-content-between direction-ltr mb-4">
+                          <input type="text" maxlength="1" inputmode="numeric" class="number_only otp-item" autofocus />
+                          <input type="text" inputmode="numeric" maxlength="1" class="number_only otp-item" />
+                          <input type="text" inputmode="numeric" maxlength="1" class="number_only otp-item" />
+                          <input type="text" inputmode="numeric" maxlength="1" class="number_only otp-item" />
+                        </div>
+                        <input type="hidden" id="verificationCode" />
+                        <div class="input-group justify-content-center">
+                          <a href="" class="font-sm me-2 text-default resend_otp">Resend Code</a><span class="font-sm text-default mb-2"><span class="me-1 font-sm text-default" id="counter"></span></span>
+                        </div>
+                        <button type="submit" class="main-btn mt-2">Enter Code</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-6 col-xl-6 col-12 mb-3-sm login-text">
+              <div class="content text-center">
+                <img src="assets/images/login-img.png" class="of-contain" alt="">
+                <div class="mt-4">
+                    <h5>To Reset Password !</h5>
+                    <p>You can ented email or phone number you have been registered before, we will send otp code to it, you will enter otp code and reset your password easily!</p>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm mb-md-3">
+          <div class="contact-title">
+            <h4 class="text-primary font-3xl fw-regular">Looking For Help ?</h4>
+            <h5 class="text-light-primary font-sm fw-normal">our Team Available 24/7</h5>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm mb-md-3">
+          <div class="service-card">
+            <div class="icon-bg">
+              <img src="assets/images/icons/Call.svg" height="25px" class="of-contain" alt="">
+            </div>
+            <div>
+              <h6 class="text-light-primary font-sm mb-1 fw-sm">Call Us At: </h6>
+              <h4 class="text-primary font-normal fw-regular mb-0">+20 1054256232</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm mb-md-3">
+          <div class="service-card">
+            <div class="icon-bg">
+              <img src="assets/images/icons/Mail.svg" height="25px" class="of-contain" alt="">
+            </div>
+            <div>
+              <h6 class="text-light-primary font-sm mb-1 fw-sm">Mail Us: </h6>
+              <h4 class="text-primary font-normal fw-regular mb-0">Support@hojuzaty.com</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm mb-md-3">
+          <div class="service-card">
+            <div class="icon-bg">
+              <img src="assets/images/icons/Whatsapp.svg" height="25px" class="of-contain" alt="">
+            </div>
+            <div>
+              <h6 class="text-light-primary font-sm mb-1 fw-sm">Support Via Whatspp: </h6>
+              <h4 class="text-primary font-normal fw-regular mb-0">+20 1054256232</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm">
+          <div class="footer-logo">
+            <img src="assets/images/footer-logo.png" height="50px" class="of-contain" alt="">
+          </div>
+          <p class="text-secondary font-sm mt-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-6 mb-3-sm">
+          <div class="footer-section-title">
+            <h4 class="text-secondary font-3xl fw-normal mb-4">Corporate</h4>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/index.html">Home</a>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/flights.html">Flights</a>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/hotels.html">Hotels</a>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/wayana.html">Wayana</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-6 mb-3-sm">
+          <div class="footer-section-title">
+            <h4 class="text-secondary font-3xl fw-normal mb-4">Our Company</h4>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/about-us.html">About Us</a>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/terms.html">Terms & Conditions</a>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm">
+          <div class="footer-section-title">
+            <h4 class="text-secondary font-3xl fw-normal mb-4">Social Media</h4>
+          </div>
+          <div class="footer-item mb-4">
+            <div class="social-media">
+              <img src="assets/images/icons/Facebook.svg" class="of-contain" height="24px" alt="">
+            </div>
+            <a href="https://www.facebook.com">Facebook</a>
+          </div>
+          <div class="footer-item mb-4">
+            <div class="social-media">
+              <img src="assets/images/icons/Instagram.svg" class="of-contain" height="24px" alt="">
+            </div>
+            <a href="https://www.instagram.com">Instagram</a>
+          </div>
+          <div class="footer-item mb-4">
+            <div class="social-media">
+              <img src="assets/images/icons/YouTube.svg" class="of-contain" height="24px" alt="">
+            </div>
+            <a href="https://www.youtube.com">YouTube</a>
+          </div>
+        </div>
+      </div>
+      <div class="lower-footer">
+        <div class="d-flex flex-wrap align-items-center justify-content-md-between justify-content-lg-between justify-content-xl-between justify-content-center">
+          <h5 class="text-secondary font-normal fw-sm mb-3-sm">All Rights Reserved To Hojuzaty © 2024</h5>
+          <div class="d-flex align-items-center">
+            <a href="#" class="me-3">
+              <img src="assets/images/icons/apple-pay.svg" height="30px" class="of-contain" alt="">
+            </a>
+            <a href="#" class="me-3">
+              <img src="assets/images/icons/visa.svg" height="30px" class="of-contain" alt="">
+            </a>
+            <a href="#" class="me-3">
+              <img src="assets/images/icons/Mastercard.svg" height="30px" class="of-contain" alt="">
+            </a>
+            <a href="#" class="me-3">
+              <img src="assets/images/icons/Mada.svg" height="30px" class="of-contain" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/bootstrap/bootstrap.js"></script>
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <script src="assets/js/select2.js"></script>
+  <script src="assets/js/fancybox.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"></script>
+  <script src="assets/js/intlTelInput.js"></script>
+  <script src="assets/js/flatpicker.js"></script>
+  <script src="assets/js/owl.carousel.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

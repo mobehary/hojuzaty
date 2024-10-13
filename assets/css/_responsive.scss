@@ -7,6 +7,21 @@
 }
 
 @media(max-width: 550px) {
+    p{
+        font-size: 14px !important;
+    }
+    .details-section{
+        .details-div{
+            padding-bottom: 0px;
+        }
+    }
+    .offers{
+        .main-offer{
+            .col-md-6.col-lg-4.col-xl-4.col-12.mb-2{
+                order: 2;
+            }
+        }
+    }
     .retrive{
         .content{
             img{
@@ -74,6 +89,9 @@
 }
 
 @media(max-width: 990px){
+    .offer-end{
+        font-size: 14px;
+    }
     .internal-header{
         .internal-title{
             h4{
@@ -116,6 +134,16 @@
                 label{
                     font-size: 14px !important;
                 }
+            }
+        }
+    }
+    #nav-tabs{
+        gap: 5px;
+        .nav-link{
+            padding: 13px 10px;
+            font-size: 12px;
+            img{
+                height: 18px !important;
             }
         }
     }

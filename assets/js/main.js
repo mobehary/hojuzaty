@@ -9,6 +9,17 @@ $("#switcher").click(function() {
     $("#takingOff").val(landing);
 });
 
+let title = document.querySelectorAll('.personal-title .item');
+
+title.forEach(element => {
+  element.onclick = function () {
+    title.forEach(element => {
+      element.classList.remove("active");
+    });
+    this.classList.add("active");
+  }
+});
+
 
 var verificationCode = [];
 

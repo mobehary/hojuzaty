@@ -506,8 +506,8 @@ section{
     [lang="en"] .offcanvas.offcanvas-start{
         right: unset;
         padding-left: unset;
-        left: 100px;
-        padding-right: 100px;
+        // left: 100px;
+        // padding-right: 100px;
     }
 }
 
@@ -515,7 +515,7 @@ section{
     [lang="en"] .offcanvas.offcanvas-start{
         right: 0;
         padding-left: unset;
-        left: unset;
+        // left: unset;
         padding-right: 0px;
     }
 }

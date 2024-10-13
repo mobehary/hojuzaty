@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/select2.css">
+  <link rel="stylesheet" href="assets/css/intlTelInput.css">
+  <link rel="stylesheet" href="assets/css/flatPicker.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/fancybox.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Hojuzaty | Offer Details</title>
+</head>
+
+<body>
+  <header class="internal-header position-relative" style="background-image: url(assets/images/internal-header.jpeg), linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));">
+    <nav class="navbar navbar-expand-lg py-4">
+    <div class="container">
+        <a class="navbar-brand" href="/"><img src="assets/images/Logo.png"  class="of-contain logo main-logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="assets/images/main-logo.svg" class="of-contain" alt=""></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body justify-content-md-between">
+            <ul class="navbar-nav justify-content-between w-100">
+            <div class="d-lg-flex d-xl-flex flex-wrap align-items-center">
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="flights.html">Flights</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="hotels.html">Hotels</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="wayana.html">Wayana</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="charter_flights.html">Charter Flights</a>
+                </li>
+            </div>
+            <div class="d-lg-flex d-xl-flex flex-wrap align-items-center">
+                <li class="nav-item">
+                <a class="nav-link text-decoration-underline" aria-current="page" href="retrive-my-book.html">Retrieve My Booking</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="sign-in.html">
+                    <img src="assets/images/icons/User.svg" height="20px" class="of-contain me-1" alt="">
+                    <span>Sign In</span>
+                </a>
+                </li>
+                <!-- <li class="nav-item">
+                <a class="nav-link registered-link" href="profile.html" >
+                    <div class="default-profile-picture">
+                    M
+                    </div>
+                    <span class="text-secondary">Welcome, Mohamed</span>
+                </a>
+                </li> -->
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    EGP
+                </a>
+                <ul class="dropdown-menu px-3">
+                    <span class="font-sm">Currency</span>
+                    <li class="my-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency selected">
+                        <img src="assets/images/flags/egy.webp" alt="">
+                        <span>Egyptian Pound (EGP)</span>
+                        <i class="ms-2 far fa-check-circle"></i>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/ksa.png" alt="">
+                        <span>Saudi Riyal (SAR)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/uae.png" alt="">
+                        <span>Emirati Dirham (AED)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/usa.png" alt="">
+                        <span>US Dollar (USD)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/euro.png" alt="">
+                        <span>Euro (EUR)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/uk.png" alt="">
+                        <span>Pound (POD)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/qatar.png" alt="">
+                        <span>Qatari Riyal (QAR)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/kuw.webp" alt="">
+                        <span>Kuwaiti Dinar (KWD)</span>
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/images/flags/uk.png" class="language-logo me-1" alt="">
+                    <span>EN</span>
+                </a>
+                <ul class="dropdown-menu px-3">
+                    <span class="font-sm">Language</span>
+                    <li class="my-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/egy.webp" alt="">
+                        <span>العربية</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency selected">
+                        <img src="assets/images/flags/uk.png" alt="">
+                        <span>English</span>
+                        <i class="ms-2 far fa-check-circle"></i>
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+                </li>
+            </div>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="d-flex align-items-center justify-content-center internal-title">
+      <div class="container">
+        <h4 class="text-secondary text-center">Embark on Your Journey with Our Exclusive Services</h4>
+          <div class="breadcrumb-div">
+            <a href="/">
+              <div class="d-flex align-items-center">
+                <img src="assets/images/icons/Home.svg" height="25px" class="of-contain me-1" alt="">
+                <span class="text-secondary font-sm">Home</span>
+              </div>
+            </a>
+            <img src="assets/images/icons/ArrowRight.svg" height="25px" class="of-contain mx-1" alt="">
+            <span class="current-page font-sm">Special Offers</span>
+            <img src="assets/images/icons/ArrowRight.svg" height="25px" class="of-contain mx-1" alt="">
+            <span class="current-page font-sm">Explore the Kingdom for less this National Day</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="details-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-8 col-xl-7 col-12 mb-3 details-div">
+          <div class="title-div">
+            <div class="main-title sm-main-title">
+              <h3>Explore the Kingdom for less this National Day</h3>
+            </div>
+          </div>
+          <div class="content">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              <br>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          </div>
+          <div class="terms-section">
+            <div class="title-div">
+              <div class="main-title">
+                <h3 class="font-3xl">Terms & Conditions</h3>
+              </div>
+            </div>
+            <div class="terms-div">
+              <div class="terms-item">
+                <img src="assets/images/icons/yellow-arrow.svg" height="10px" class="of-contain me-2" alt="">
+                <h5 class="mb-0 font-regular fw-normal">Booking is non-refundable & non-amendable.</h5>
+              </div>
+              <div class="terms-item">
+                <img src="assets/images/icons/yellow-arrow.svg" height="10px" class="of-contain me-2" alt="">
+                <h5 class="mb-0 font-regular fw-normal">Departure ports may vary depending on weather and other conditions.</h5>
+              </div>
+              <div class="terms-item">
+                <img src="assets/images/icons/yellow-arrow.svg" height="10px" class="of-contain me-2" alt="">
+                <h5 class="mb-0 font-regular fw-normal">Bookings are available for adults and children aged 12 years and above.</h5>
+              </div>
+              <div class="terms-item">
+                <img src="assets/images/icons/yellow-arrow.svg" height="10px" class="of-contain me-2" alt="">
+                <h5 class="mb-0 font-regular fw-normal">No discounts can be used with this cruise package.</h5>
+              </div>
+              <div class="terms-item">
+                <img src="assets/images/icons/yellow-arrow.svg" height="10px" class="of-contain me-2" alt="">
+                <h5 class="mb-0 font-regular fw-normal">The package price will exclude the following: - Land transportation - Onshore excursions - Flights - Internet - Spa & salon services</h5>
+              </div>
+              <div class="terms-item">
+                <img src="assets/images/icons/yellow-arrow.svg" height="10px" class="of-contain me-2" alt="">
+                <h5 class="mb-0 font-regular fw-normal">Rates are subject to change based on availability without prior notice.</h5>
+              </div>
+            </div>
+          </div>
+          <div class="download-div">
+            <div class="title-div">
+              <div class="main-title">
+                <h3 class="font-3xl">Download Offer</h3>
+              </div>
+            </div>
+            <div class="mt-3">
+              <button class="download-btn">
+                <img src="assets/images/icons/download.svg" height="15px" class="of-contain" alt="">
+                Download PDF
+              </button>
+            </div>
+            <div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4 col-lg-5 col-12 mb-3">
+          <div class="contact-card">
+            <div class="title-div">
+              <div class="main-title">
+                <h3 class="font-3xl">Contact Us To Get Your Offer</h3>
+              </div>
+            </div>
+            <h4 class="font-regular text-primary mt-4 fw-normal">You can Reach us though</h4>
+            <a href="https://www.wa.me/01010101010">
+              <div class="whatsapp-div">
+                <i class="fab fa-whatsapp"></i>
+                <span class="font-regular text-secondary">Contact Us Via Whatsapp</span>
+              </div>
+            </a>
+            <h4 class="text-primary font-normal text-center my-4 text-light-primary">OR</h4>
+            <div class="contact-form">
+              <h3 class="font-xl text-primary">Contact Details</h3>
+              <form action="">
+                <div class="form-group">
+                  <label for="">Title</label>
+                  <div class="personal-title">
+                    <div class="item active" data-value="mr"><span>Mr</span></div>
+                    <div class="item" data-value="mrs"><span>Mrs</span></div>
+                    <div class="item" data-value="ms"><span>Ms</span></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="">Full Name</label>
+                  <input type="text" placeholder="Full Name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="">Email</label>
+                  <input type="email" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="" class="fw-normal font-sm text-primary mb-1">Phone Number</label>
+                  <input type="text" class="form-control" id="mobile-number" placeholder="Phone">
+                </div>
+                <button type="submit" class="main-btn mt-4">Request A Call Back</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="footer mt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm mb-md-3">
+          <div class="contact-title">
+            <h4 class="text-primary font-3xl fw-regular">Looking For Help ?</h4>
+            <h5 class="text-light-primary font-sm fw-normal">our Team Available 24/7</h5>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm mb-md-3">
+          <div class="service-card">
+            <div class="icon-bg">
+              <img src="assets/images/icons/Call.svg" height="25px" class="of-contain" alt="">
+            </div>
+            <div>
+              <h6 class="text-light-primary font-sm mb-1 fw-sm">Call Us At: </h6>
+              <h4 class="text-primary font-normal fw-regular mb-0">+20 1054256232</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm mb-md-3">
+          <div class="service-card">
+            <div class="icon-bg">
+              <img src="assets/images/icons/Mail.svg" height="25px" class="of-contain" alt="">
+            </div>
+            <div>
+              <h6 class="text-light-primary font-sm mb-1 fw-sm">Mail Us: </h6>
+              <h4 class="text-primary font-normal fw-regular mb-0">Support@hojuzaty.com</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm mb-md-3">
+          <div class="service-card">
+            <div class="icon-bg">
+              <img src="assets/images/icons/Whatsapp.svg" height="25px" class="of-contain" alt="">
+            </div>
+            <div>
+              <h6 class="text-light-primary font-sm mb-1 fw-sm">Support Via Whatspp: </h6>
+              <h4 class="text-primary font-normal fw-regular mb-0">+20 1054256232</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm">
+          <div class="footer-logo">
+            <img src="assets/images/footer-logo.png" height="50px" class="of-contain" alt="">
+          </div>
+          <p class="text-secondary font-sm mt-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-6 mb-3-sm">
+          <div class="footer-section-title">
+            <h4 class="text-secondary font-3xl fw-normal mb-4">Corporate</h4>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/index.html">Home</a>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/flights.html">Flights</a>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/hotels.html">Hotels</a>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/wayana.html">Wayana</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-6 mb-3-sm">
+          <div class="footer-section-title">
+            <h4 class="text-secondary font-3xl fw-normal mb-4">Our Company</h4>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/about-us.html">About Us</a>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/terms.html">Terms & Conditions</a>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm">
+          <div class="footer-section-title">
+            <h4 class="text-secondary font-3xl fw-normal mb-4">Social Media</h4>
+          </div>
+          <div class="footer-item mb-4">
+            <div class="social-media">
+              <img src="assets/images/icons/Facebook.svg" class="of-contain" height="24px" alt="">
+            </div>
+            <a href="https://www.facebook.com">Facebook</a>
+          </div>
+          <div class="footer-item mb-4">
+            <div class="social-media">
+              <img src="assets/images/icons/Instagram.svg" class="of-contain" height="24px" alt="">
+            </div>
+            <a href="https://www.instagram.com">Instagram</a>
+          </div>
+          <div class="footer-item mb-4">
+            <div class="social-media">
+              <img src="assets/images/icons/YouTube.svg" class="of-contain" height="24px" alt="">
+            </div>
+            <a href="https://www.youtube.com">YouTube</a>
+          </div>
+        </div>
+      </div>
+      <div class="lower-footer">
+        <div class="d-flex flex-wrap align-items-center justify-content-md-between justify-content-lg-between justify-content-xl-between justify-content-center">
+          <h5 class="text-secondary font-normal fw-sm mb-3-sm">All Rights Reserved To Hojuzaty © 2024</h5>
+          <div class="d-flex align-items-center">
+            <a href="#" class="me-3">
+              <img src="assets/images/icons/apple-pay.svg" height="30px" class="of-contain" alt="">
+            </a>
+            <a href="#" class="me-3">
+              <img src="assets/images/icons/visa.svg" height="30px" class="of-contain" alt="">
+            </a>
+            <a href="#" class="me-3">
+              <img src="assets/images/icons/Mastercard.svg" height="30px" class="of-contain" alt="">
+            </a>
+            <a href="#" class="me-3">
+              <img src="assets/images/icons/Mada.svg" height="30px" class="of-contain" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/bootstrap/bootstrap.js"></script>
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <script src="assets/js/select2.js"></script>
+  <script src="assets/js/fancybox.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"></script>
+  <script src="assets/js/intlTelInput.js"></script>
+  <script src="assets/js/flatpicker.js"></script>
+  <script src="assets/js/owl.carousel.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

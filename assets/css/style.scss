@@ -582,16 +582,28 @@ p{
     }
 }
 
+.accordion-body{
+    img{
+        height: 300px;
+        object-fit: contain;
+        max-width: 100%;
+    }
+}
+
+.accordion-button{
+    // &:first-of-type{
+    //     padding-top: 0;
+    // }
+    // &:last-of-type{
+    //     padding-bottom: 0;
+    // }
+}
+
 .accordion{
     --bs-accordion-border-width: none !important;
 }
 
-.accordion-button{
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 10px;
+.accordion-button.collapsed{
     .accordion-circle{
         height: 20px;
         width: 20px;
@@ -600,12 +612,31 @@ p{
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+        background-color: #fff;
+        z-index: 15;
+        .inner-circle{
+            height: 17px;
+            width: 17px;
+            border: 1px solid #FFF;
+            background-color: #FFF;
+            border-radius: 50%;
+        }
     }
-    .accordion-circle.active{
+    
+}
+.accordion-button:not(.collapsed){
+    .accordion-circle{
         height: 20px;
         width: 20px;
         border-radius: 50%;
         border: 1px solid #2BB2E1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: #fff;
+        z-index: 15;
         .inner-circle{
             height: 17px;
             width: 17px;
@@ -614,20 +645,48 @@ p{
             border-radius: 50%;
         }
     }
+}
+
+.accordion-button{
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: unset !important;
+    gap: 10px;
     &:focus{
         box-shadow: none;
     }
 }
 
-.accordion-time{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 15px;
+.vertical-line{
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    left: 82px;
+    background-color: #45BCE5;
+    z-index: 4;
+}
+.vertical-line.package-vertical{
+    left: 25px;
 }
 
-.accordion-item{
-    border: none;
+.cabin-img{
+    max-width: 100%;
+}
+
+.contact-paragraph{
+    font-size: 16px;
+    color: #3D3D3D;
+}
+
+.custom-fc{
+    margin-top: 70px !important;
+}
+
+.accordion-time{
+    gap: 15px;
+    // border-inline-end: 1px solid #2BB2E1;
 }
 
 .accordion-button:not(.collapsed){
@@ -924,6 +983,75 @@ footer{
             color: $primary-color;
             font-size: 28px;
             margin-bottom: 20px;
+        }
+    }
+}
+
+.domestic-details{
+    padding: 60px 0px !important;
+    .details-div{
+        padding-top: 0px !important;
+    }
+    .contact-card{
+        padding: 30px 20px 30px;
+    }
+    .owl-carousel{
+        padding: 0px 50px;
+        position: relative;
+    }
+    .owl-nav.disabled{
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 42%;
+        width: 100%;
+        right: 0px;
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 35px;
+            width: 35px;
+            border: 1px solid $primary-color;
+            border-radius: 50%;
+            span{
+                font-size: 40px;
+                font-weight: 300;
+                margin-bottom: 3px;
+            }
+        }
+    }
+}
+
+.hotel-card{
+    height: 265px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    h4{
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+    .city-badge{
+        background-color: $secondary-color;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        span{
+            font-size: 12px;
+            padding: 3px 12px;
+            color: $primary-color;
         }
     }
 }

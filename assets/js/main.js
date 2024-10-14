@@ -147,6 +147,30 @@ $('.services-carousel.owl-carousel').owlCarousel({
         }
     }
 });
+
+$('.domestic-carousel .owl-carousel').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav:true,
+    loop: true,
+    dots: false,
+    rtl: document.documentElement.lang == "ar" ? true : false,
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+        },
+        600:{
+            items:2,
+            nav:false,
+        },
+        1000:{
+            items:2
+        }
+    }
+});
+
+
 $('.offers-carousel.owl-carousel').owlCarousel({
     loop:true,
     margin:20,
@@ -185,6 +209,18 @@ $('.wayana-carousel.owl-carousel').owlCarousel({
         }
     }
 });
+
+$(function() {
+  $('.date-range').daterangepicker({
+    opens: 'left'
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
+
+
+
+
 var input = document.querySelector("#mobile-number");
   window.intlTelInput(input, {
     initialCountry: "in",

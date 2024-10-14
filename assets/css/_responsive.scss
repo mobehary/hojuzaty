@@ -89,6 +89,12 @@
 }
 
 @media(max-width: 990px){
+    .owl-nav.disabled{
+        display: none !important;
+    }
+    .vertical-line{
+        display: none;
+    }
     .offer-end{
         font-size: 14px;
     }

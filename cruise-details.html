@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="assets/css/owl.carousel.css">
   <link rel="stylesheet" href="assets/css/fancybox.css">
   <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Hojuzaty | Cruise Details</title>
 </head>
@@ -222,7 +223,7 @@
             </div>
           </div>
           <div class="content mt-1 mb-5">
-            <img src="assets/images/Cabin Photo.png" height="265px" class="of-contain" alt="">
+            <img src="assets/images/Cabin Photo.png" height="265px" class="of-contain cabin-img" alt="">
           </div>
           <div class="terms-section">
             <div class="title-div">
@@ -256,21 +257,24 @@
                 <h3 class="font-3xl">Itinerary</h3>
               </div>
             </div>
-            <div class="terms-div px-1">
-              <div class="accordion" id="accordionExample">
+            <div class="terms-div px-1 py-4">
+              <div class="accordion position-relative" id="accordionProgram">
+                <div class="vertical-line"></div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button px-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button px-3 pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       <div class="row w-100">
-                        <div class="col-2 pe-0">
+                        <div class="col-lg-1 col-xl-1 col-md-2 col-3 pe-0">
                           <div class="accordion-time">
-                            <span class="accordion-day">Day 1</span>
-                            <div class="accordion-circle">
-                              <div class="inner-circle"></div>
-                            </div>
+                            <span class="accordion-day text-light-primary fw-normal">Day 1</span>
                           </div>
                         </div>
-                        <div class="col-10 ps-0">
+                        <div class="col-1 d-none-sm d-md-none d-lg-flex pe-0">
+                          <div class="accordion-circle">
+                            <div class="inner-circle"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-10 col-lg-10 col-xl-10 col-9">
                           <div class="accordion-title">
                             Start Your Cruise From Rome, Italy
                           </div>
@@ -280,31 +284,276 @@
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <div class="row">
+                        <div class="col-10 ps-0 offset-lg-2 offset-xl-2">
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                          <img src="assets/images/accordion.jpg" alt="">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
+                    <button class="accordion-button px-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <div class="row w-100">
+                        <div class="col-lg-1 col-xl-1 col-md-2 col-3 pe-0">
+                          <div class="accordion-time">
+                            <span class="accordion-day text-light-primary fw-normal">Day 2</span>
+                          </div>
+                        </div>
+                        <div class="col-1 d-none-sm d-md-none d-lg-flex pe-0">
+                          <div class="accordion-circle">
+                            <div class="inner-circle"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-10 col-lg-10 col-xl-10 col-9">
+                          <div class="accordion-title">
+                            Day In Naples, Italy
+                          </div>
+                        </div>
+                      </div>
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <div class="row">
+                        <div class="col-10 ps-0 offset-lg-2 offset-xl-2">
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                          <img src="assets/images/accordion.jpg" alt="">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #3
+                    <button class="accordion-button px-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <div class="row w-100">
+                        <div class="col-lg-1 col-xl-1 col-md-2 col-3 pe-0">
+                          <div class="accordion-time">
+                            <span class="accordion-day text-light-primary fw-normal">Day 3</span>
+                          </div>
+                        </div>
+                        <div class="col-1 d-none-sm d-md-none d-lg-flex pe-0">
+                          <div class="accordion-circle">
+                            <div class="inner-circle"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-10 col-lg-10 col-xl-10 col-9">
+                          <div class="accordion-title">
+                            Day In Milan, Italy
+                          </div>
+                        </div>
+                      </div>
                     </button>
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <div class="row">
+                        <div class="col-10 ps-0 offset-lg-2 offset-xl-2">
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                          <img src="assets/images/accordion.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button px-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <div class="row w-100">
+                        <div class="col-lg-1 col-xl-1 col-md-2 col-3 pe-0">
+                          <div class="accordion-time">
+                            <span class="accordion-day text-light-primary fw-normal">Day 4</span>
+                          </div>
+                        </div>
+                        <div class="col-1 d-none-sm d-md-none d-lg-flex pe-0">
+                          <div class="accordion-circle">
+                            <div class="inner-circle"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-10 col-lg-10 col-xl-10 col-9">
+                          <div class="accordion-title">
+                            Day In Venice, Italy
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-10 ps-0 offset-lg-2 offset-xl-2">
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                          <img src="assets/images/accordion.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button px-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      <div class="row w-100">
+                        <div class="col-lg-1 col-xl-1 col-md-2 col-3 pe-0">
+                          <div class="accordion-time">
+                            <span class="accordion-day text-light-primary fw-normal">Day 5</span>
+                          </div>
+                        </div>
+                        <div class="col-1 d-none-sm d-md-none d-lg-flex pe-0">
+                          <div class="accordion-circle">
+                            <div class="inner-circle"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-10 col-lg-10 col-xl-10 col-9">
+                          <div class="accordion-title">
+                            Day In Barcelona, Spain
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-10 ps-0 offset-lg-2 offset-xl-2">
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                          <img src="assets/images/accordion.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button px-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      <div class="row w-100">
+                        <div class="col-lg-1 col-xl-1 col-md-2 col-3 pe-0">
+                          <div class="accordion-time">
+                            <span class="accordion-day text-light-primary fw-normal">Day 6</span>
+                          </div>
+                        </div>
+                        <div class="col-1 d-none-sm d-md-none d-lg-flex pe-0">
+                          <div class="accordion-circle">
+                            <div class="inner-circle"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-10 col-lg-10 col-xl-10 col-9">
+                          <div class="accordion-title">
+                            Day In Palma, Spain
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-10 ps-0 offset-lg-2 offset-xl-2">
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                          <img src="assets/images/accordion.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button px-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      <div class="row w-100">
+                        <div class="col-lg-1 col-xl-1 col-md-2 col-3 pe-0">
+                          <div class="accordion-time">
+                            <span class="accordion-day text-light-primary fw-normal">Day 7</span>
+                          </div>
+                        </div>
+                        <div class="col-1 d-none-sm d-md-none d-lg-flex pe-0">
+                          <div class="accordion-circle">
+                            <div class="inner-circle"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-10 col-lg-10 col-xl-10 col-9">
+                          <div class="accordion-title">
+                            Day In Paris, France
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-10 ps-0 offset-lg-2 offset-xl-2">
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                          <img src="assets/images/accordion.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button px-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                      <div class="row w-100">
+                        <div class="col-lg-1 col-xl-1 col-md-2 col-3 pe-0">
+                          <div class="accordion-time">
+                            <span class="accordion-day text-light-primary fw-normal">Day 8</span>
+                          </div>
+                        </div>
+                        <div class="col-1 d-none-sm d-md-none d-lg-flex pe-0">
+                          <div class="accordion-circle">
+                            <div class="inner-circle"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-10 col-lg-10 col-xl-10 col-9">
+                          <div class="accordion-title">
+                            Day In Strasbourg, Spain
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-10 ps-0 offset-lg-2 offset-xl-2">
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                          <img src="assets/images/accordion.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button px-3 pb-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                      <div class="row w-100">
+                        <div class="col-lg-1 col-xl-1 col-md-2 col-3 pe-0">
+                          <div class="accordion-time">
+                            <span class="accordion-day text-light-primary fw-normal">Day 9</span>
+                          </div>
+                        </div>
+                        <div class="col-1 d-none-sm d-md-none d-lg-flex pe-0">
+                          <div class="accordion-circle">
+                            <div class="inner-circle"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-10 col-lg-10 col-xl-10 col-9">
+                          <div class="accordion-title">
+                            Day In Rennes, Spain
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-10 ps-0 offset-lg-2 offset-xl-2">
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                          <img src="assets/images/accordion.jpg" alt="">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -349,11 +598,11 @@
         <div class="col-md-12 col-lg-4 col-lg-5 col-12 mb-3">
           <div class="contact-card">
             <div class="title-div">
-              <div class="main-title">
-                <h3 class="font-3xl">Contact Us To Get Your Offer</h3>
+              <div class="main-title sm-main-title">
+                <h3 class="font-2xl">Plan Your Package !</h3>
               </div>
             </div>
-            <h4 class="font-regular text-primary mt-4 fw-normal">You can Reach us though</h4>
+            <p class="mt-4 fw-normal contact-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
             <a href="https://www.wa.me/01010101010">
               <div class="whatsapp-div">
                 <i class="fab fa-whatsapp"></i>
@@ -383,6 +632,20 @@
                 <div class="form-group">
                   <label for="" class="fw-normal font-sm text-primary mb-1">Phone Number</label>
                   <input type="text" class="form-control" id="mobile-number" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                  <label for="" class="fw-normal font-sm text-primary mb-1">Number of Adults</label>
+                  <select name="" class="niceSelect form-control w-100" id="">
+                    <option value="">1 Adult</option>
+                    <option value="">3 Adult</option>
+                    <option value="">5 Adult</option>
+                    <option value="">10 Adult</option>
+                    <option value="">15 Adult</option>
+                  </select>
+                </div>
+                <div class="form-group custom-fc">
+                  <label for="" class="fw-normal font-sm text-primary mb-1">Travel Date</label>
+                  <input type="text" class="date-range form-control" name="" placeholder="28 Sep, 2024 - 10 Oct, 2024" id="">
                 </div>
                 <button type="submit" class="main-btn mt-4">Request A Call Back</button>
               </form>
@@ -545,6 +808,8 @@
   <script src="assets/js/intlTelInput.js"></script>
   <script src="assets/js/flatpicker.js"></script>
   <script src="assets/js/owl.carousel.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 

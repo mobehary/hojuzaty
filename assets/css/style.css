@@ -1338,6 +1338,25 @@ p .available-on {
   box-shadow: none;
 }
 
+.price-div {
+  padding: 20px 15px;
+}
+.price-div .price-content {
+  border: 1px solid #DDDD01;
+  border-radius: 3px;
+  padding: 20px 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.price-div .price-content h4 {
+  color: #666666;
+  font-size: 16px;
+}
+.price-div .price-content h4 span {
+  font-size: 24px;
+  color: #000;
+}
+
 .vertical-line {
   height: 100%;
   width: 2px;

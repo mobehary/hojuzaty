@@ -659,6 +659,24 @@ p{
     }
 }
 
+.price-div{
+    padding: 20px 15px;
+    .price-content{
+        border: 1px solid #DDDD01;
+        border-radius: 3px;
+        padding: 20px 15px;
+        width: fit-content;
+        h4{
+            color: $light-primary-color;
+            font-size: 16px;
+            span{
+                font-size: 24px;
+                color: $primary-color;
+            }
+        }
+    }
+}
+
 .vertical-line{
     height: 100%;
     width: 2px;

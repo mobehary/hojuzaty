@@ -316,6 +316,25 @@ i{
         justify-content: center;
         background-color: #E4F5FB;
         border-radius: 50%;
+        img{
+            height: 25px;
+            object-fit: contain;
+        }
+    }
+}
+
+.icon-bg{
+    margin-inline-end: 10px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4F5FB;
+    border-radius: 50%;
+    img{
+        height: 25px;
+        object-fit: contain;
     }
 }
 
@@ -659,6 +678,11 @@ p{
     }
 }
 
+.jawak{
+    background-blend-mode:  unset !important;
+    height: 100vh !important;
+}
+
 .price-div{
     padding: 20px 15px;
     .price-content{
@@ -731,6 +755,63 @@ p{
             }
         }
     }
+}
+
+.profile{
+    .profile-pic-div{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        .user-number{
+            color: #DEDEDE;
+        }
+    }
+    #imagePreview{
+        height: 90px;
+        width: 90px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+    .profile-tabs{
+        button{
+            width: 100%;
+            background-color: #FFF;
+            border: 1px solid #DEDEDE;
+            border-radius: 5px;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            span{
+                color: $primary-color;
+                font-weight: 500;
+            }
+        }
+        button.active{
+            background-color: #F5F5F5;
+            box-shadow: 0px 4px 12px 0px #0000001F;
+            span{
+                color: $primary-color;
+            }
+        }
+    }
+    .tab-item{
+        border: 1px solid #DEDEDE;
+        border-radius: 5px;
+        padding: 15px 20px;
+    }
+}
+
+.tab-item-header{
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
 .offer-card{
@@ -1070,6 +1151,50 @@ footer{
             font-size: 12px;
             padding: 3px 12px;
             color: $primary-color;
+        }
+    }
+}
+
+.est2nas-title{
+    h2{
+        color: #532259;
+        font-size: 48px;
+        font-weight: 500;
+    }
+    h4{
+        color: $light-primary-color;
+        font-size: 20px;
+        font-weight: 400;
+        span{
+            color: #2BB2E1;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+}
+
+.est2nas-details{
+    background-color: #F7F7F7;
+    .subscribe{
+        padding: 25px 0px;
+        height: 35px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        background-color: #532259;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .est2nas-sub-title{
+        line-height: 1.5;
+        margin: 20px 0px 50px;
+    }
+    .terms-item{
+        margin-bottom: 30px !important;
+        &:last-of-type{
+            margin-bottom: 0px !important;
         }
     }
 }

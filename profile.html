@@ -250,6 +250,458 @@
                     <h4 class="fw-normal font-sm text-light-primary mb-0">Manage and View Your Booking</h4>
                   </div>
                 </div>
+                <div class="outer-tabs">
+                  <ul class="nav nav-pills mb-3 justify-content-around" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="flights-tab" data-bs-toggle="pill" data-bs-target="#flights" type="button" role="tab" aria-controls="flights" aria-selected="true"><img src="assets/images/icons/Plane-category.svg" class="of-contain me-1" height="20px" alt=""> Flights</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="hotels-tab" data-bs-toggle="pill" data-bs-target="#hotels" type="button" role="tab" aria-controls="hotels" aria-selected="false"><img src="assets/images/icons/Bed-category.svg" class="of-contain me-1" height="20px" alt=""> Hotels</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="charter-flights-tab" data-bs-toggle="pill" data-bs-target="#charter-flights" type="button" role="tab" aria-controls="charter-flights" aria-selected="false"><img src="assets/images/icons/Plane-category.svg" class="of-contain me-1" height="20px" alt=""> Charter Flights</button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-item-body">
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="flights" role="tabpanel" aria-labelledby="flights-tab" tabindex="0">
+                      <div class="inner-tabs">
+                        <ul class="nav nav-pills row" id="pills-tab" role="tablist">
+                          <div class="col-4 px-0">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="flight-upcoming-tab" data-bs-toggle="pill" data-bs-target="#flight-upcoming" type="button" role="tab" aria-controls="flight-upcoming" aria-selected="true">Upcoming</button>
+                            </li>
+                          </div>
+                          <div class="col-4 px-0">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="flight-past-tab" data-bs-toggle="pill" data-bs-target="#flight-past" type="button" role="tab" aria-controls="flight-past" aria-selected="false">Past</button>
+                            </li>
+                          </div>
+                          <div class="col-4 px-0">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="flight-cancelled-tab" data-bs-toggle="pill" data-bs-target="#flight-cancelled" type="button" role="tab" aria-controls="flight-cancelled" aria-selected="false">Cancelled</button>
+                            </li>
+                          </div>
+                        </ul>
+                      </div>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="flight-upcoming" role="tabpanel" aria-labelledby="flight-upcoming-tab" tabindex="0">
+                          <div class="outer-ticket">
+                            <div class="inner-ticket">
+                              <div class="ticket-cover">
+                                <div class="left-side">
+                                  <div class="airline">
+                                    <div class="airline-logo">
+                                      <img src="assets/images/egypt-air.png" width="30px" class="of-contain" alt="">
+                                    </div>
+                                    <span class="text-primary font-sm fw-regular">Egypt Air</span>
+                                  </div>
+                                  <div class="ticket-info d-flex flex-column justify-content-end h-100">
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0">CAI</h5>
+                                      <h5 class="text-primary font-normal mb-0">Direct - One Way</h5>
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0">DXB</h5>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">04:00 <span class="fw-normal font-normal">AM</span></h4>
+                                      <div class="trip-line">
+                                        <img src="assets/images/icons/PlaneSolid.svg" height="25px" class="of-contain" alt="">
+                                      </div>
+                                      <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">07:30 <span class="fw-normal font-normal">AM</span></h4>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0">Cairo International Airport</h5>
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0 text-end-sm text-md-end text-start">Dubai International Airport</h5>
+                                    </div>
+                                    <div class="d-lg-flex align-items-center justify-content-center mt-3 gap-10">
+                                      <div class="extra-info">
+                                        <img src="assets/images/icons/Time.svg" height="20px" class="of-contain" alt="">
+                                        <span>30 Sep, 2024 - 3hrs, 30mins</span>
+                                      </div>
+                                      <div class="extra-info">
+                                        <img src="assets/images/icons/Luggage.svg" height="20px" class="of-contain" alt="">
+                                        <span>Luggage: 1 Piece</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="right-side position-relative d-flex align-items-center justify-content-start px-md-4 px-2">
+                                  <div class="circle-div ceil-circle"></div>
+                                  <div class="circle-div floor-circle"></div>
+                                  <div>
+                                    <h5 class="text-light-primary font-normal fw-normal">Price</h5>
+                                    <h4 class="text-primary font-xl">32,000 <span class="text-primary font-xl">EGP</span></h4>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+    
+                        <div class="outer-ticket">
+                          <div class="inner-ticket">
+                            <div class="ticket-cover">
+                              <div class="left-side">
+                                <div class="airline">
+                                  <div class="airline-logo">
+                                    <img src="assets/images/egypt-air.png" width="30px" class="of-contain" alt="">
+                                  </div>
+                                  <span class="text-primary font-sm fw-regular">Egypt Air</span>
+                                </div>
+                                <div class="ticket-info d-flex flex-column justify-content-end h-100">
+                                  <div>
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0">CAI</h5>
+                                      <h5 class="text-primary font-normal mb-0">Stop 1</h5>
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0">DXB</h5>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">04:00 <span class="fw-normal font-normal">AM</span></h4>
+                                      <div class="trip-line">
+                                        <img src="assets/images/icons/PlaneSolid.svg" height="25px" class="of-contain" alt="">
+                                      </div>
+                                      <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">07:30 <span class="fw-normal font-normal">AM</span></h4>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0">Cairo International Airport</h5>
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0 text-end-sm text-md-end text-start">Dubai International Airport</h5>
+                                    </div>
+                                    <div class="d-lg-flex align-items-center justify-content-center mt-3 gap-10">
+                                      <div class="extra-info">
+                                        <img src="assets/images/icons/Time.svg" height="20px" class="of-contain" alt="">
+                                        <span>30 Sep, 2024 - 3hrs, 30mins</span>
+                                      </div>
+                                      <div class="extra-info">
+                                        <img src="assets/images/icons/Luggage.svg" height="20px" class="of-contain" alt="">
+                                        <span>Luggage: 1 Piece</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="stop-2">
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0">CAI</h5>
+                                      <h5 class="text-primary font-normal mb-0">Stop 1</h5>
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0">DXB</h5>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">04:00 <span class="fw-normal font-normal">AM</span></h4>
+                                      <div class="trip-line">
+                                        <img src="assets/images/icons/PlaneSolid.svg" height="25px" class="of-contain" alt="">
+                                      </div>
+                                      <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">07:30 <span class="fw-normal font-normal">AM</span></h4>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0">Cairo International Airport</h5>
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0 text-end-sm text-md-end text-start">Dubai International Airport</h5>
+                                    </div>
+                                    <div class="d-lg-flex align-items-center justify-content-center mt-3 gap-10">
+                                      <div class="extra-info">
+                                        <img src="assets/images/icons/Time.svg" height="20px" class="of-contain" alt="">
+                                        <span>30 Sep, 2024 - 3hrs, 30mins</span>
+                                      </div>
+                                      <div class="extra-info">
+                                        <img src="assets/images/icons/Luggage.svg" height="20px" class="of-contain" alt="">
+                                        <span>Luggage: 1 Piece</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="right-side position-relative d-flex align-items-center justify-content-start px-md-4 px-2">
+                                <div class="circle-div ceil-circle"></div>
+                                <div class="circle-div floor-circle"></div>
+                                <div>
+                                  <h5 class="text-light-primary font-normal fw-normal">Price</h5>
+                                  <h4 class="text-primary font-xl">32,000 <span class="text-primary font-xl">EGP</span></h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="tab-pane fade" id="flight-past" role="tabpanel" aria-labelledby="flight-past-tab" tabindex="0">
+                          <div class="outer-ticket">
+                            <div class="inner-ticket">
+                              <div class="ticket-cover">
+                                <div class="left-side">
+                                  <div class="airline">
+                                    <div class="airline-logo">
+                                      <img src="assets/images/egypt-air.png" width="30px" class="of-contain" alt="">
+                                    </div>
+                                    <span class="text-primary font-sm fw-regular">Egypt Air</span>
+                                  </div>
+                                  <div class="ticket-info d-flex flex-column justify-content-end h-100">
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0">CAI</h5>
+                                      <h5 class="text-primary font-normal mb-0">Direct - One Way</h5>
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0">DXB</h5>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">04:00 <span class="fw-normal font-normal">AM</span></h4>
+                                      <div class="trip-line">
+                                        <img src="assets/images/icons/PlaneSolid.svg" height="25px" class="of-contain" alt="">
+                                      </div>
+                                      <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">07:30 <span class="fw-normal font-normal">AM</span></h4>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0">Cairo International Airport</h5>
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0 text-end-sm text-md-end text-start">Dubai International Airport</h5>
+                                    </div>
+                                    <div class="d-lg-flex align-items-center justify-content-center mt-3 gap-10">
+                                      <div class="extra-info">
+                                        <img src="assets/images/icons/Time.svg" height="20px" class="of-contain" alt="">
+                                        <span>30 Sep, 2024 - 3hrs, 30mins</span>
+                                      </div>
+                                      <div class="extra-info">
+                                        <img src="assets/images/icons/Luggage.svg" height="20px" class="of-contain" alt="">
+                                        <span>Luggage: 1 Piece</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="right-side position-relative d-flex align-items-center justify-content-start px-md-4 px-2">
+                                  <div class="circle-div ceil-circle"></div>
+                                  <div class="circle-div floor-circle"></div>
+                                  <div>
+                                    <h5 class="text-light-primary font-normal fw-normal">Price</h5>
+                                    <h4 class="text-primary font-xl">32,000 <span class="text-primary font-xl">EGP</span></h4>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+    
+                          <div class="outer-ticket">
+                            <div class="inner-ticket">
+                              <div class="ticket-cover">
+                                <div class="left-side">
+                                  <div class="airline">
+                                    <div class="airline-logo">
+                                      <img src="assets/images/egypt-air.png" width="30px" class="of-contain" alt="">
+                                    </div>
+                                    <span class="text-primary font-sm fw-regular">Egypt Air</span>
+                                  </div>
+                                  <div class="ticket-info d-flex flex-column justify-content-end h-100">
+                                    <div>
+                                      <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <h5 class="text-light-primary fw-normal font-normal mb-0">CAI</h5>
+                                        <h5 class="text-primary font-normal mb-0">Stop 1</h5>
+                                        <h5 class="text-light-primary fw-normal font-normal mb-0">DXB</h5>
+                                      </div>
+                                      <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">04:00 <span class="fw-normal font-normal">AM</span></h4>
+                                        <div class="trip-line">
+                                          <img src="assets/images/icons/PlaneSolid.svg" height="25px" class="of-contain" alt="">
+                                        </div>
+                                        <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">07:30 <span class="fw-normal font-normal">AM</span></h4>
+                                      </div>
+                                      <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <h5 class="text-light-primary fw-normal font-normal mb-0">Cairo International Airport</h5>
+                                        <h5 class="text-light-primary fw-normal font-normal mb-0 text-end-sm text-md-end text-start">Dubai International Airport</h5>
+                                      </div>
+                                      <div class="d-lg-flex align-items-center justify-content-center mt-3 gap-10">
+                                        <div class="extra-info">
+                                          <img src="assets/images/icons/Time.svg" height="20px" class="of-contain" alt="">
+                                          <span>30 Sep, 2024 - 3hrs, 30mins</span>
+                                        </div>
+                                        <div class="extra-info">
+                                          <img src="assets/images/icons/Luggage.svg" height="20px" class="of-contain" alt="">
+                                          <span>Luggage: 1 Piece</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="stop-2">
+                                      <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <h5 class="text-light-primary fw-normal font-normal mb-0">CAI</h5>
+                                        <h5 class="text-primary font-normal mb-0">Stop 1</h5>
+                                        <h5 class="text-light-primary fw-normal font-normal mb-0">DXB</h5>
+                                      </div>
+                                      <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">04:00 <span class="fw-normal font-normal">AM</span></h4>
+                                        <div class="trip-line">
+                                          <img src="assets/images/icons/PlaneSolid.svg" height="25px" class="of-contain" alt="">
+                                        </div>
+                                        <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">07:30 <span class="fw-normal font-normal">AM</span></h4>
+                                      </div>
+                                      <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <h5 class="text-light-primary fw-normal font-normal mb-0">Cairo International Airport</h5>
+                                        <h5 class="text-light-primary fw-normal font-normal mb-0 text-end-sm text-md-end text-start">Dubai International Airport</h5>
+                                      </div>
+                                      <div class="d-lg-flex align-items-center justify-content-center mt-3 gap-10">
+                                        <div class="extra-info">
+                                          <img src="assets/images/icons/Time.svg" height="20px" class="of-contain" alt="">
+                                          <span>30 Sep, 2024 - 3hrs, 30mins</span>
+                                        </div>
+                                        <div class="extra-info">
+                                          <img src="assets/images/icons/Luggage.svg" height="20px" class="of-contain" alt="">
+                                          <span>Luggage: 1 Piece</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="right-side position-relative d-flex align-items-center justify-content-start px-md-4 px-2">
+                                  <div class="circle-div ceil-circle"></div>
+                                  <div class="circle-div floor-circle"></div>
+                                  <div>
+                                    <h5 class="text-light-primary font-normal fw-normal">Price</h5>
+                                    <h4 class="text-primary font-xl">32,000 <span class="text-primary font-xl">EGP</span></h4>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="flight-cancelled" role="tabpanel" aria-labelledby="flight-cancelled-tab" tabindex="0">
+                          <div class="outer-ticket">
+                            <div class="inner-ticket">
+                              <div class="ticket-cover">
+                                <div class="left-side">
+                                  <div class="airline">
+                                    <div class="airline-logo">
+                                      <img src="assets/images/egypt-air.png" width="30px" class="of-contain" alt="">
+                                    </div>
+                                    <span class="text-primary font-sm fw-regular">Egypt Air</span>
+                                  </div>
+                                  <div class="ticket-info d-flex flex-column justify-content-end h-100">
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0">CAI</h5>
+                                      <h5 class="text-primary font-normal mb-0">Direct - One Way</h5>
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0">DXB</h5>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">04:00 <span class="fw-normal font-normal">AM</span></h4>
+                                      <div class="trip-line">
+                                        <img src="assets/images/icons/PlaneSolid.svg" height="25px" class="of-contain" alt="">
+                                      </div>
+                                      <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">07:30 <span class="fw-normal font-normal">AM</span></h4>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0">Cairo International Airport</h5>
+                                      <h5 class="text-light-primary fw-normal font-normal mb-0 text-end-sm text-md-end text-start">Dubai International Airport</h5>
+                                    </div>
+                                    <div class="d-lg-flex align-items-center justify-content-center mt-3 gap-10">
+                                      <div class="extra-info">
+                                        <img src="assets/images/icons/Time.svg" height="20px" class="of-contain" alt="">
+                                        <span>30 Sep, 2024 - 3hrs, 30mins</span>
+                                      </div>
+                                      <div class="extra-info">
+                                        <img src="assets/images/icons/Luggage.svg" height="20px" class="of-contain" alt="">
+                                        <span>Luggage: 1 Piece</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="right-side position-relative d-flex align-items-center justify-content-start px-md-4 px-2">
+                                  <div class="circle-div ceil-circle"></div>
+                                  <div class="circle-div floor-circle"></div>
+                                  <div>
+                                    <h5 class="text-light-primary font-normal fw-normal">Price</h5>
+                                    <h4 class="text-primary font-xl">32,000 <span class="text-primary font-xl">EGP</span></h4>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+    
+                          <div class="outer-ticket">
+                            <div class="inner-ticket">
+                              <div class="ticket-cover">
+                                <div class="left-side">
+                                  <div class="airline">
+                                    <div class="airline-logo">
+                                      <img src="assets/images/egypt-air.png" width="30px" class="of-contain" alt="">
+                                    </div>
+                                    <span class="text-primary font-sm fw-regular">Egypt Air</span>
+                                  </div>
+                                  <div class="ticket-info d-flex flex-column justify-content-end h-100">
+                                    <div>
+                                      <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <h5 class="text-light-primary fw-normal font-normal mb-0">CAI</h5>
+                                        <h5 class="text-primary font-normal mb-0">Stop 1</h5>
+                                        <h5 class="text-light-primary fw-normal font-normal mb-0">DXB</h5>
+                                      </div>
+                                      <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">04:00 <span class="fw-normal font-normal">AM</span></h4>
+                                        <div class="trip-line">
+                                          <img src="assets/images/icons/PlaneSolid.svg" height="25px" class="of-contain" alt="">
+                                        </div>
+                                        <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">07:30 <span class="fw-normal font-normal">AM</span></h4>
+                                      </div>
+                                      <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <h5 class="text-light-primary fw-normal font-normal mb-0">Cairo International Airport</h5>
+                                        <h5 class="text-light-primary fw-normal font-normal mb-0 text-end-sm text-md-end text-start">Dubai International Airport</h5>
+                                      </div>
+                                      <div class="d-lg-flex align-items-center justify-content-center mt-3 gap-10">
+                                        <div class="extra-info">
+                                          <img src="assets/images/icons/Time.svg" height="20px" class="of-contain" alt="">
+                                          <span>30 Sep, 2024 - 3hrs, 30mins</span>
+                                        </div>
+                                        <div class="extra-info">
+                                          <img src="assets/images/icons/Luggage.svg" height="20px" class="of-contain" alt="">
+                                          <span>Luggage: 1 Piece</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="stop-2">
+                                      <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <h5 class="text-light-primary fw-normal font-normal mb-0">CAI</h5>
+                                        <h5 class="text-primary font-normal mb-0">Stop 1</h5>
+                                        <h5 class="text-light-primary fw-normal font-normal mb-0">DXB</h5>
+                                      </div>
+                                      <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">04:00 <span class="fw-normal font-normal">AM</span></h4>
+                                        <div class="trip-line">
+                                          <img src="assets/images/icons/PlaneSolid.svg" height="25px" class="of-contain" alt="">
+                                        </div>
+                                        <h4 class="text-primary fw-regular font-xxl mb-0 no-wrap">07:30 <span class="fw-normal font-normal">AM</span></h4>
+                                      </div>
+                                      <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <h5 class="text-light-primary fw-normal font-normal mb-0">Cairo International Airport</h5>
+                                        <h5 class="text-light-primary fw-normal font-normal mb-0 text-end-sm text-md-end text-start">Dubai International Airport</h5>
+                                      </div>
+                                      <div class="d-lg-flex align-items-center justify-content-center mt-3 gap-10">
+                                        <div class="extra-info">
+                                          <img src="assets/images/icons/Time.svg" height="20px" class="of-contain" alt="">
+                                          <span>30 Sep, 2024 - 3hrs, 30mins</span>
+                                        </div>
+                                        <div class="extra-info">
+                                          <img src="assets/images/icons/Luggage.svg" height="20px" class="of-contain" alt="">
+                                          <span>Luggage: 1 Piece</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="right-side position-relative d-flex align-items-center justify-content-start px-md-4 px-2">
+                                  <div class="circle-div ceil-circle"></div>
+                                  <div class="circle-div floor-circle"></div>
+                                  <div>
+                                    <h5 class="text-light-primary font-normal fw-normal">Price</h5>
+                                    <h4 class="text-primary font-xl">32,000 <span class="text-primary font-xl">EGP</span></h4>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="hotels" role="tabpanel" aria-labelledby="hotels-tab" tabindex="0">
+                      <div class="h-100 d-flex align-items-center justify-content-center">
+                        <div class="text-center">
+                          <img src="assets/images/Asset 11 1.png" height="300px" class="of-contain" alt="">
+                          <div class="mt-4 pb-4">
+                            <h3 class="text-primary text-center font-3xl fw-regular">You Don't Have Any Booking</h3>
+                            <p class="text-light-primary text-center font-normal fw-normal">Check Out Some of Our Amazing offers or get Inspiration of your first Trip</p>
+                            <a href="offers.html" class="main-btn mx-auto">Explore Travel Offers</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="charter-flights" role="tabpanel" aria-labelledby="charter-flights-tab" tabindex="0">...</div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="tab-pane fade" id="program" role="tabpanel" aria-labelledby="program-tab" tabindex="0">...</div>

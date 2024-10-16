@@ -509,6 +509,9 @@ section{
         // left: 100px;
         // padding-right: 100px;
     }
+    .text-end-sm{
+        text-align: end;
+    }
 }
 
 @media(min-width: 551px) and (max-width: 990px){
@@ -517,5 +520,8 @@ section{
         padding-left: unset;
         // left: unset;
         padding-right: 0px;
+    }
+    .font-normal{
+        font-size: 14px;
     }
 }

@@ -89,6 +89,21 @@
 }
 
 @media(max-width: 990px){
+    .left-side{
+        .ticket-info{
+            padding: 65px 5px 25px;
+        }
+    }
+    .trip-line{
+        display: none;
+    }
+    .left-side{
+        .extra-info{
+            span{
+                font-size: 12px;
+            }
+        }
+    }
     .owl-nav.disabled{
         display: none !important;
     }

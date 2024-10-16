@@ -705,12 +705,18 @@ section {
     right: unset;
     padding-left: unset;
   }
+  .text-end-sm {
+    text-align: end;
+  }
 }
 @media (min-width: 551px) and (max-width: 990px) {
   [lang=en] .offcanvas.offcanvas-start {
     right: 0;
     padding-left: unset;
     padding-right: 0px;
+  }
+  .font-normal, p {
+    font-size: 14px;
   }
 }
 .home-header {
@@ -1483,13 +1489,14 @@ p .available-on {
 .profile .tab-item {
   border: 1px solid #DEDEDE;
   border-radius: 5px;
-  padding: 15px 20px;
 }
 
 .tab-item-header {
   display: flex;
   align-items: center;
   justify-content: start;
+  padding: 20px 30px;
+  border-bottom: 1px solid #DEDEDE;
 }
 
 .offer-card {
@@ -1863,6 +1870,150 @@ footer .lower-footer {
   margin-bottom: 0px !important;
 }
 
+.no-wrap {
+  text-wrap: nowrap;
+}
+
+.ticket .d-flex {
+  text-wrap: wrap;
+}
+
+.stop-2 {
+  border-top: 2px dashed #E0E0E0;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.outer-ticket {
+  padding: 40px 30px 20px;
+}
+
+.inner-ticket {
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.ticket-cover {
+  border: 1px solid #D0D0D0;
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.left-side {
+  width: 70%;
+  border-right: 2px dashed #D0D0D0;
+  position: relative;
+}
+.left-side .extra-info {
+  background-color: #E4F5FB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 35px;
+  padding: 5px 15px;
+  margin-bottom: 5px;
+}
+.left-side .extra-info span {
+  font-size: 14px;
+  color: #000;
+}
+.left-side .airline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px 0px;
+  background-color: #E4F5FB;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: 8px 15px 8px 5px;
+}
+.left-side .airline .airline-logo {
+  background-color: #FFFFFF;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-side .ticket-info {
+  padding: 65px 20px 25px;
+}
+.left-side .trip-line {
+  height: 2px;
+  border: 2px dashed #DEDEDE;
+  width: 100%;
+  position: relative;
+}
+.left-side .trip-line img {
+  position: absolute;
+  top: -12px;
+  left: 46%;
+}
+
+.right-side {
+  width: 30%;
+}
+
+.circle-div {
+  position: absolute;
+  left: -35px;
+  border: 1px solid #D0D0D0;
+  background-color: #FFFFFF;
+  z-index: 999999;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.ceil-circle {
+  top: -40px;
+}
+
+.floor-circle {
+  bottom: -40px;
+}
+
+.inner-tabs {
+  margin: 0px 50px;
+  background-color: #F5F5F5;
+  padding: 0px 20px;
+  border-radius: 50px;
+}
+.inner-tabs .nav-link {
+  width: 100%;
+  color: #666666;
+}
+.inner-tabs .nav-link.active {
+  background-color: #2BB2E1;
+  border-radius: 50px;
+}
+
+.outer-tabs {
+  padding: 25px 0px;
+}
+.outer-tabs .nav-pills {
+  border-bottom: 1px solid #D9D9D9;
+}
+.outer-tabs .nav-pills .nav-link {
+  color: #666666;
+  font-weight: 400;
+}
+.outer-tabs .nav-pills .nav-link.active {
+  background-color: transparent;
+  border-bottom: 2px solid #532259;
+  border-radius: 0px;
+  color: #000;
+  font-weight: 500;
+}
+
 .intl-tel-input,
 .iti {
   width: 100%;
@@ -1929,6 +2080,15 @@ footer .lower-footer {
   }
 }
 @media (max-width: 990px) {
+  .left-side .ticket-info {
+    padding: 65px 5px 25px;
+  }
+  .trip-line {
+    display: none;
+  }
+  .left-side .extra-info span {
+    font-size: 12px;
+  }
   .owl-nav.disabled {
     display: none !important;
   }

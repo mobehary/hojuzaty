@@ -3,7 +3,15 @@
 }
 
 @media (max-width: 360px) {
-
+    .account{
+        .auth-card{
+            .nav-pills{
+                .nav-link{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }
 
 @media(max-width: 550px) {

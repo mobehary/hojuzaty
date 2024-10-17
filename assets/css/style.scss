@@ -130,7 +130,7 @@ a.main-btn{
 nav{
     ul{
         .nav-item{
-            margin: 0px 10px;
+            margin: 0px 5px;
             .nav-link{
                 color: $secondary-color !important;
                 transition: all 0.3s;
@@ -365,6 +365,44 @@ i{
         font-size: 14px;
         border-radius: 50px;
     }
+}
+
+.trip-category{
+    width: fit-content;
+    background-color: #E4F5FB;
+    border-radius: 3px;
+    padding: 3px 15px;
+}
+
+.separator-trip{
+    height: 100%;
+    width: 0px;
+    border-left: 2px dashed #BDBDBD;
+}
+
+.padding-div{
+    margin-bottom: 45px;
+}
+
+.luggage-div{
+    padding: 15px 50px 15px 20px;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px;
+    width: fit-content;
+    i{
+        color: #139008;
+    }
+}
+
+.airline-rectangle{
+    border: 1px solid #A0A0A0;
+    border-radius: 3px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
 }
 
 p{
@@ -701,6 +739,14 @@ p{
     }
 }
 
+.seats-div{
+    border: 1px solid #DEDEDE;
+    border-radius: 3px;
+    padding: 10px 15px;
+    width: fit-content;
+    margin: auto;
+}
+
 .vertical-line{
     height: 100%;
     width: 2px;
@@ -807,12 +853,29 @@ p{
     }
 }
 
+.tab-item-body{
+    input{
+        &::placeholder{
+            font-size: 14px;
+        }
+    }
+}
+
+.text-transparent{
+    color: transparent;
+    user-select: none
+}
+
 .tab-item-header{
     display: flex;
     align-items: center;
     justify-content: start;
     padding: 20px 30px;
     border-bottom: 1px solid #DEDEDE;
+}
+
+.bordered-top{
+    border-top: 1px solid #DEDEDE;
 }
 
 .offer-card{
@@ -1318,6 +1381,41 @@ footer{
     .nav-link.active{
         background-color: #2BB2E1;
         border-radius: 50px;
+    }
+}
+
+.charter{
+    .left-side{
+        width: 75%;
+    }
+    .right-side{
+        width: 25%;
+    }
+}
+
+#w-unset{
+    width: unset !important;
+}
+
+.gap-8{
+    gap: 8px;
+}
+
+.filter-item{
+    padding: 10px 0px;
+    border-bottom: 1px solid #D0D0D0;
+    .reset-filter{
+        color: #532259;
+        text-decoration: underline;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    input[type="checkbox"]{
+        height: 20px;
+        width: 20px;
+    }
+    input[type="range"]{
+        accent-color: red;
     }
 }
 

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
   <link rel="stylesheet" href="assets/css/nice-select.css">
   <link rel="stylesheet" href="assets/css/select2.css">
+  <link rel="stylesheet" href="assets/css/intlTelInput.css">
   <link rel="stylesheet" href="assets/css/flatPicker.css">
   <link rel="stylesheet" href="assets/css/owl.carousel.css">
   <link rel="stylesheet" href="assets/css/fancybox.css">
@@ -40,13 +41,13 @@
                 <a class="nav-link" aria-current="page" href="#">Flights</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="hotels.html">Hotels</a>
+                <a class="nav-link" href="/">Hotels</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="wayana.html">Wayana</a>
+                <a class="nav-link" href="offers.html">Wayana</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="charter_flights.html">Charter Flights</a>
+                <a class="nav-link" href="charter-flights.html">Charter Flights</a>
                 </li>
             </div>
             <div class="d-lg-flex d-xl-flex flex-wrap align-items-center">
@@ -249,9 +250,155 @@
                     <h4 class="fw-normal font-sm text-light-primary mb-0">View / Edit Your Personal information</h4>
                   </div>
                 </div>
-                <div class="tab-item-body py-4">
-                  
-                </div>
+                <form action="">
+                  <div class="tab-item-body py-4 mx-4">
+                    <h4 class="font-normal text-primary fw-normal">Account Details</h4>
+                    <div class="row">
+                      <div class="col-md-10 col-lg-9 col-xl-9 col-12 mb-3">
+                        <div class="form-group mt-4">
+                          <label class="font-sm mb-1" for="">Email</label>
+                          <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <label for="" class="fw-normal font-sm text-primary mb-1">Phone Number</label>
+                          <input type="text" class="form-control" id="mobile-number" placeholder="Phone">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-item-body py-4 mx-4 bordered-top">
+                    <h4 class="font-normal text-primary fw-normal">Personal Information</h4>
+                    <div class="row">
+                      <div class="col-md-10 col-lg-6 col-xl-6 col-12 mb-3">
+                        <div class="form-group mt-4">
+                          <label class="font-sm mb-1" for="">First Name</label>
+                          <input type="text" class="form-control" placeholder="First Name">
+                        </div>
+                      </div>
+                      <div class="col-md-10 col-lg-6 col-xl-6 col-12 mb-3">
+                        <div class="form-group mt-4">
+                          <label class="font-sm mb-1" for="">Last Name</label>
+                          <input type="text" class="form-control" placeholder="Last Name">
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-3 col-xl-3 col-12 mb-3">
+                        <label class="font-sm mb-1" for="">Date of Birth</label>
+                        <select name="" class="form-control form-select" id="">
+                          <option value="#" selected disabled>Day</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                          <option value="31">31</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4 col-3 col-xl-3 col-12 mb-3">
+                        <label class="font-sm mb-1 text-transparent" for="">Month</label>
+                        <select name="" class="form-control form-select" id="">
+                          <option value="#" selected disabled>Month</option>
+                          <option value="Jan">January</option>
+                          <option value="Feb">February</option>
+                          <option value="Mar">March</option>
+                          <option value="Apr">April</option>
+                          <option value="May">May</option>
+                          <option value="Jun">June</option>
+                          <option value="Jul">July</option>
+                          <option value="Aug">Augstus</option>
+                          <option value="Sep">Septemper</option>
+                          <option value="Oct">October</option>
+                          <option value="Nov">November</option>
+                          <option value="Dec">December</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4 col-3 col-xl-3 col-12 mb-3">
+                        <label class="font-sm mb-1 text-transparent" for="">Year</label>
+                        <select name="" class="form-control form-select" id="">
+                          <option value="#" selected disabled>Year</option>
+                          <option value="2023">2023</option>
+                          <option value="2022">2022</option>
+                          <option value="2021">2021</option>
+                          <option value="2020">2020</option>
+                          <option value="2019">2019</option>
+                          <option value="2018">2018</option>
+                          <option value="2017">2017</option>
+                          <option value="2016">2016</option>
+                          <option value="2015">2015</option>
+                          <option value="2014">2014</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 col-6 col-xl-6 col-12 mb-3">
+                        <label class="font-sm mb-1" for="">Gender</label>
+                        <select name="" class="form-control form-select" id="">
+                          <option value="#" selected disabled>Gender</option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 col-6 col-xl-6 col-12 mb-3">
+                        <label class="font-sm mb-1" for="">Family Status</label>
+                        <select name="" class="form-control form-select" id="">
+                          <option value="#" selected disabled>Family Status</option>
+                          <option value="single">Single</option>
+                          <option value="married">Married</option>
+                          <option value="divorced">Divorced</option>
+                          <option value="widowed">Widowed</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 col-6 col-xl-6 col-12 mb-3">
+                        <label class="font-sm mb-1" for="">Nationality</label>
+                        <select name="" class="form-control form-select" id="">
+                          <option value="#" selected disabled>Nationality</option>
+                          <option value="Egyptian">Egyptian</option>
+                          <option value="Saudi">Saudi</option>
+                          <option value="Syrian">Syrian</option>
+                          <option value="Palestinian">Palestinian</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 col-6 col-xl-6 col-12 mb-3">
+                        <label class="font-sm mb-1" for="">Country Of residence</label>
+                        <select name="" class="form-control form-select" id="">
+                          <option value="#" selected disabled>Country Of residence</option>
+                          <option value="Egyptian">Egypt</option>
+                          <option value="Saudi">KSA</option>
+                          <option value="Syrian">Syria</option>
+                          <option value="Palestine">Palestine</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 col-5 col-xl-5 col-12 mb-3">
+                        <button type="submit" class="main-btn">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-item-body py-4 mx-4 bordered-top d-flex align-items-center">
+                    <a href="#" class="text-danger"><img src="assets/images/icons/Delete.svg" height="20px" class="of-contain me-2" alt="">Delete my account</a>
+                  </div>
+                </form>
               </div>
             </div>
             <div class="tab-pane fade show active" id="my-booking" role="tabpanel" aria-labelledby="my-booking-tab" tabindex="0">
@@ -923,15 +1070,15 @@
           </div>
           <div class="footer-item">
             <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
-            <a href="/flights.html">Flights</a>
+            <a href="//">Flights</a>
           </div>
           <div class="footer-item">
             <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
-            <a href="/hotels.html">Hotels</a>
+            <a href="//">Hotels</a>
           </div>
           <div class="footer-item">
             <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
-            <a href="/wayana.html">Wayana</a>
+            <a href="/offers.html">Wayana</a>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 col-xl-3 col-6 mb-3-sm">
@@ -1001,6 +1148,8 @@
   <script src="assets/js/jquery.js"></script>
   <script src="assets/bootstrap/bootstrap.js"></script>
   <script src="assets/js/jquery.nice-select.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"></script>
+  <script src="assets/js/intlTelInput.js"></script>
   <script src="assets/js/select2.js"></script>
   <script src="assets/js/fancybox.js"></script>
   <script src="assets/js/flatpicker.js"></script>

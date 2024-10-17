@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/select2.css">
+  <link rel="stylesheet" href="assets/css/intlTelInput.css">
+  <link rel="stylesheet" href="assets/css/flatPicker.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/fancybox.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Hojuzaty | Charter Flights Details</title>
+</head>
+
+<body>
+  <header class="internal-header position-relative" style="background-image: url(assets/images/internal-header.jpeg), linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));">
+    <nav class="navbar navbar-expand-lg py-4">
+    <div class="container">
+        <a class="navbar-brand" href="/"><img src="assets/images/Logo.png"  class="of-contain logo main-logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="assets/images/main-logo.svg" class="of-contain" alt=""></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body justify-content-md-between">
+            <ul class="navbar-nav justify-content-between w-100">
+            <div class="d-lg-flex d-xl-flex flex-wrap align-items-center">
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Flights</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/">Hotels</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="offers.html">Wayana</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="charter-flights.html">Charter Flights</a>
+                </li>
+            </div>
+            <div class="d-lg-flex d-xl-flex flex-wrap align-items-center">
+                <li class="nav-item">
+                <a class="nav-link text-decoration-underline" aria-current="page" href="retrive-my-book.html">Retrieve My Booking</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="sign-in.html">
+                      <img src="assets/images/icons/User.svg" height="20px" class="of-contain me-1" alt="">
+                      <span>Sign In</span>
+                  </a>
+                </li> -->
+                <li class="nav-item">
+                <a class="nav-link registered-link" href="profile.html" >
+                    <div class="default-profile-picture">
+                    M
+                    </div>
+                    <span class="text-secondary">Welcome, Mohamed</span>
+                </a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    EGP
+                </a>
+                <ul class="dropdown-menu px-3">
+                    <span class="font-sm">Currency</span>
+                    <li class="my-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency selected">
+                        <img src="assets/images/flags/egy.webp" alt="">
+                        <span>Egyptian Pound (EGP)</span>
+                        <i class="ms-2 far fa-check-circle"></i>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/ksa.png" alt="">
+                        <span>Saudi Riyal (SAR)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/uae.png" alt="">
+                        <span>Emirati Dirham (AED)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/usa.png" alt="">
+                        <span>US Dollar (USD)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/euro.png" alt="">
+                        <span>Euro (EUR)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/uk.png" alt="">
+                        <span>Pound (POD)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/qatar.png" alt="">
+                        <span>Qatari Riyal (QAR)</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/kuw.webp" alt="">
+                        <span>Kuwaiti Dinar (KWD)</span>
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/images/flags/uk.png" class="language-logo me-1" alt="">
+                    <span>EN</span>
+                </a>
+                <ul class="dropdown-menu px-3">
+                    <span class="font-sm">Language</span>
+                    <li class="my-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency">
+                        <img src="assets/images/flags/egy.webp" alt="">
+                        <span>العربية</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="mb-2">
+                    <a class="dropdown-item" href="#">
+                        <div class="currency selected">
+                        <img src="assets/images/flags/uk.png" alt="">
+                        <span>English</span>
+                        <i class="ms-2 far fa-check-circle"></i>
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+                </li>
+            </div>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="d-flex align-items-center justify-content-center internal-title">
+        <div class="container">
+          <h4 class="text-secondary text-center">CAI - DXB</h4>
+          <div class="breadcrumb-div">
+            <a href="/">
+              <div class="d-flex align-items-center">
+                <img src="assets/images/icons/Home.svg" height="25px" class="of-contain me-1" alt="">
+                <span class="text-secondary font-sm">Home</span>
+              </div>
+            </a>
+            <img src="assets/images/icons/ArrowRight.svg" height="25px" class="of-contain mx-1" alt="">
+            <span class="current-page font-sm">Charter Flights</span>
+            <img src="assets/images/icons/ArrowRight.svg" height="25px" class="of-contain mx-1" alt="">
+            <span class="current-page font-sm">CAI - DXB</span>
+          </div>
+        </div>
+    </div>
+  </header>
+
+  <section class="details-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-8 col-xl-7 col-12 mb-3 details-div">
+          <div class="trip-category mb-4">
+            <span>Round Trip / 1 Stop</span>
+          </div>
+          <div class="gap-10 d-flex align-items-center justify-content-start">
+            <h1 class="mb-0">CAI</h1>
+            <img src="assets/images/icons/Arrow.svg" height="30px" class="of-contain" alt="">
+            <h1 class="mb-0">DXB</h1>
+          </div>
+          <div class="content">
+            <div class="content-title d-flex align-items-center justify-content-start ms-3">
+              <img src="assets/images/icons/TakingOff.svg" class="of-contain me-2" height="20px" alt="">
+              <span class="text-primary font-regular">Departure Flight</span>
+            </div>
+            <div class="roadmap mt-4">
+              <div class="row">
+                <div class="col-3 padding-div">
+                  <h4 class="text-primary fw-regular font-normal">04:00 AM</h4>
+                  <h4 class="text-primary fw-normal font-sm">30 Sep, 2024</h4>
+                </div>
+                <div class="col-1">
+                  <div class="separator-trip d-flex align-items-start justify-content-center">
+                    <img src="assets/images/icons/Circle.svg" height="20px" class="of-contain" alt="">
+                  </div>
+                </div>
+                <div class="col-8 padding-div">
+                  <h4 class="text-primary fw-regular font-normal">Cairo International Airport (CAI)</h4>
+                  <h4 class="text-primary fw-normal font-sm">Terminal 2</h4>
+                  <h4 class="text-primary fw-normal font-sm">Cairo, Egypt</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 padding-div d-flex flex-column justify-content-center">
+                  <div class="trip-category">
+                    <span>3hrs, 30mins</span>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="separator-trip d-flex align-items-start justify-content-center">
+                  </div>
+                </div>
+                <div class="col-8 padding-div">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <div class="airline-rectangle">
+                      <img src="assets/images/egypt-air.png" width="100%" class="of-contain" alt="">
+                    </div>
+                    <div class="ms-2">
+                      <h4 class="text-primary fw-normal font-normal mb-2">EGYPTAIR - AR20299</h4>
+                      <h4 class="text-primary fw-normal font-normal mb-0">Economy Class</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 padding-div">
+                  <h4 class="text-primary fw-regular font-normal">06:00 AM</h4>
+                  <h4 class="text-primary fw-normal font-sm">30 Sep, 2024</h4>
+                </div>
+                <div class="col-1">
+                  <div class="separator-trip d-flex align-items-start justify-content-center">
+                    <img src="assets/images/icons/Circle.svg" height="20px" class="of-contain" alt="">
+                  </div>
+                </div>
+                <div class="col-8 padding-div">
+                  <h4 class="text-primary fw-regular font-normal">Kuwait International Airport (KWI)</h4>
+                  <h4 class="text-primary fw-normal font-sm">Terminal 2</h4>
+                  <h4 class="text-primary fw-normal font-sm">Kuwait, Kuwait</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 padding-div d-flex flex-column justify-content-center">
+                  <div class="trip-category">
+                    <span>1hr, 30mins</span>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="separator-trip d-flex align-items-start justify-content-center">
+                  </div>
+                </div>
+                <div class="col-8 padding-div">
+                  <div class="trip-category">
+                    <h4 class="d-flex align-items-center font-regular justify-content-center mb-0 py-3 px-3">Waiting Between Flights In Kuwait</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 padding-div">
+                </div>
+                <div class="col-1">
+                  <div class="separator-trip d-flex align-items-start justify-content-center">
+                    <img src="assets/images/icons/Circle.svg" height="20px" class="of-contain" alt="">
+                  </div>
+                </div>
+                <div class="col-8 padding-div">
+                  <h4 class="text-primary fw-regular font-normal">Kuwait International Airport (KWI)</h4>
+                  <h4 class="text-primary fw-normal font-sm">Terminal 2</h4>
+                  <h4 class="text-primary fw-normal font-sm">Kuwait, Kuwait</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 padding-div d-flex flex-column justify-content-center">
+                  <div class="trip-category">
+                    <span>3hrs, 30mins</span>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="separator-trip d-flex align-items-start justify-content-center">
+                  </div>
+                </div>
+                <div class="col-8 padding-div">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <div class="airline-rectangle">
+                      <img src="assets/images/egypt-air.png" width="100%" class="of-contain" alt="">
+                    </div>
+                    <div class="ms-2">
+                      <h4 class="text-primary fw-normal font-normal mb-2">EGYPTAIR - AR20299</h4>
+                      <h4 class="text-primary fw-normal font-normal mb-0">Economy Class</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 padding-div">
+                </div>
+                <div class="col-1 px-1">
+                  <div class="d-flex align-items-start justify-content-start">
+                    <img src="assets/images/icons/Circle.svg" height="20px" class="of-contain" alt="">
+                  </div>
+                </div>
+                <div class="col-8 padding-div">
+                  <h4 class="text-primary fw-regular font-normal">Dubai International Airport (DXB)</h4>
+                  <h4 class="text-primary fw-normal font-sm">Terminal 2</h4>
+                  <h4 class="text-primary fw-normal font-sm">Kuwait, Kuwait</h4>
+                </div>
+              </div>
+            </div>
+            <div class="content-title d-flex align-items-center justify-content-start ms-3 mt-3">
+              <img src="assets/images/icons/Landing.svg" class="of-contain me-2" height="20px" alt="">
+              <span class="text-primary font-regular">Return Flight</span>
+            </div>
+            <div class="roadmap mt-4">
+              <div class="row">
+                <div class="col-3 padding-div">
+                  <h4 class="text-primary fw-regular font-normal">04:00 AM</h4>
+                  <h4 class="text-primary fw-normal font-sm">30 Sep, 2024</h4>
+                </div>
+                <div class="col-1">
+                  <div class="separator-trip d-flex align-items-start justify-content-center">
+                    <img src="assets/images/icons/Circle.svg" height="20px" class="of-contain" alt="">
+                  </div>
+                </div>
+                <div class="col-8 padding-div">
+                  <h4 class="text-primary fw-regular font-normal">Cairo International Airport (CAI)</h4>
+                  <h4 class="text-primary fw-normal font-sm">Terminal 2</h4>
+                  <h4 class="text-primary fw-normal font-sm">Cairo, Egypt</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 padding-div d-flex flex-column justify-content-center">
+                  <div class="trip-category">
+                    <span>3hrs, 30mins</span>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="separator-trip d-flex align-items-start justify-content-center">
+                  </div>
+                </div>
+                <div class="col-8 padding-div">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <div class="airline-rectangle">
+                      <img src="assets/images/egypt-air.png" width="100%" class="of-contain" alt="">
+                    </div>
+                    <div class="ms-2">
+                      <h4 class="text-primary fw-normal font-normal mb-2">EGYPTAIR - AR20299</h4>
+                      <h4 class="text-primary fw-normal font-normal mb-0">Economy Class</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 padding-div">
+                  <h4 class="text-primary fw-regular font-normal">04:00 AM</h4>
+                  <h4 class="text-primary fw-normal font-sm">30 Sep, 2024</h4>
+                </div>
+                <div class="col-1 px-1">
+                  <div class="d-flex align-items-start justify-content-start">
+                    <img src="assets/images/icons/Circle.svg" height="20px" class="of-contain" alt="">
+                  </div>
+                </div>
+                <div class="col-8 padding-div">
+                  <h4 class="text-primary fw-regular font-normal">Dubai International Airport (DXB)</h4>
+                  <h4 class="text-primary fw-normal font-sm">Terminal 2</h4>
+                  <h4 class="text-primary fw-normal font-sm">Kuwait, Kuwait</h4>
+                </div>
+              </div>
+            </div>
+            <div class="content-title d-flex align-items-center justify-content-start ms-3 mt-3">
+              <img src="assets/images/icons/Luggage.svg" class="of-contain me-2" height="20px" alt="">
+              <span class="text-primary font-regular">Luggage Allowance</span>
+            </div>
+            <div class="mt-3">
+              <div class="luggage-div">
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2 d-flex align-items-center justify-content-start">
+                    <i class="fa fa-check-circle me-2 font-regular"></i>
+                    <span class="text-primary font-lg">7 Kg - Cabin Luggage</span>
+                  </li>
+                  <li class="mb-2 d-flex align-items-center justify-content-start">
+                    <i class="fa fa-check-circle me-2 font-regular"></i>
+                    <span class="text-primary font-lg">30 Kg - Total Checked Luggage</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4 col-lg-5 col-12 mb-3">
+          <div class="contact-card">
+            <div class="title-div">
+              <div class="main-title sm-main-title">
+                <h3 class="font-2xl justify-content-center">Book Your Flight Now</h3>
+              </div>
+            </div>
+            <div class="seats-div">
+              <h4 class="fw-normal font-normal text-success text-capitalize mb-0 text-center">5 Seats Available</h4>
+            </div>
+            <div class="price-div">
+              <div class="price-content mx-auto text-center py-2 px-5">
+                <h4 class="fw-normal text-capitalize mb-2">Price</h4>
+                <h4 class="mb-0"><span class="ms-1">20,000 EGP</span></h4>
+              </div>
+            </div>
+            <div class="contact-form">
+              <h3 class="font-xl text-primary">Booking Details</h3>
+              <form action="">
+                <div class="form-group">
+                  <label for="">Title</label>
+                  <div class="personal-title">
+                    <div class="item active" data-value="mr"><span>Mr</span></div>
+                    <div class="item" data-value="mrs"><span>Mrs</span></div>
+                    <div class="item" data-value="ms"><span>Ms</span></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="">Full Name</label>
+                  <input type="text" placeholder="Full Name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="">Email</label>
+                  <input type="email" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="" class="fw-normal font-sm text-primary mb-1">Phone Number</label>
+                  <input type="text" class="form-control" id="mobile-number" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                  <label for="">Passport Number</label>
+                  <input type="text" placeholder="Passport Number" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="" class="fw-normal font-sm text-primary mb-1">Number of Seats</label>
+                  <select name="" class="form-select form-control" id="">
+                    <option value="">1 Seat</option>
+                    <option value="">2 Seats</option>
+                    <option value="">3 Seats</option>
+                    <option value="">4 Seats</option>
+                    <option value="">5 Seats</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="" class="fw-normal font-sm text-primary mb-1">Passport Expiry Date</label>
+                  <div class="row">
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-12 mb-2">
+                      <select name="" class="form-control form-select" id="">
+                        <option value="#" selected disabled>DD</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-12 mb-2">
+                      <select name="" class="form-control form-select" id="">
+                        <option value="#" selected disabled>MM</option>
+                        <option value="Jan">January</option>
+                        <option value="Feb">February</option>
+                        <option value="Mar">March</option>
+                        <option value="Apr">April</option>
+                        <option value="May">May</option>
+                        <option value="Jun">June</option>
+                        <option value="Jul">July</option>
+                        <option value="Aug">Augstus</option>
+                        <option value="Sep">Septemper</option>
+                        <option value="Oct">October</option>
+                        <option value="Nov">November</option>
+                        <option value="Dec">December</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-12 mb-2">
+                      <select name="" class="form-control form-select" id="">
+                        <option value="#" selected disabled>YYYY</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="" class="fw-normal font-sm text-primary mb-1">Date of Birth</label>
+                  <div class="row">
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-12 mb-2">
+                      <select name="" class="form-control form-select" id="">
+                        <option value="#" selected disabled>DD</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-12 mb-2">
+                      <select name="" class="form-control form-select" id="">
+                        <option value="#" selected disabled>MM</option>
+                        <option value="Jan">January</option>
+                        <option value="Feb">February</option>
+                        <option value="Mar">March</option>
+                        <option value="Apr">April</option>
+                        <option value="May">May</option>
+                        <option value="Jun">June</option>
+                        <option value="Jul">July</option>
+                        <option value="Aug">Augstus</option>
+                        <option value="Sep">Septemper</option>
+                        <option value="Oct">October</option>
+                        <option value="Nov">November</option>
+                        <option value="Dec">December</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-12 mb-2">
+                      <select name="" class="form-control form-select" id="">
+                        <option value="#" selected disabled>YYYY</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="main-btn mt-4">Book Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm mb-md-3">
+          <div class="contact-title">
+            <h4 class="text-primary font-3xl fw-regular">Looking For Help ?</h4>
+            <h5 class="text-light-primary font-sm fw-normal">our Team Available 24/7</h5>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm mb-md-3">
+          <div class="service-card">
+            <div class="icon-bg">
+              <img src="assets/images/icons/Call.svg" height="25px" class="of-contain" alt="">
+            </div>
+            <div>
+              <h6 class="text-light-primary font-sm mb-1 fw-sm">Call Us At: </h6>
+              <h4 class="text-primary font-normal fw-regular mb-0">+20 1054256232</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm mb-md-3">
+          <div class="service-card">
+            <div class="icon-bg">
+              <img src="assets/images/icons/Mail.svg" height="25px" class="of-contain" alt="">
+            </div>
+            <div>
+              <h6 class="text-light-primary font-sm mb-1 fw-sm">Mail Us: </h6>
+              <h4 class="text-primary font-normal fw-regular mb-0">Support@hojuzaty.com</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm mb-md-3">
+          <div class="service-card">
+            <div class="icon-bg">
+              <img src="assets/images/icons/Whatsapp.svg" height="25px" class="of-contain" alt="">
+            </div>
+            <div>
+              <h6 class="text-light-primary font-sm mb-1 fw-sm">Support Via Whatspp: </h6>
+              <h4 class="text-primary font-normal fw-regular mb-0">+20 1054256232</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm">
+          <div class="footer-logo">
+            <img src="assets/images/footer-logo.png" height="50px" class="of-contain" alt="">
+          </div>
+          <p class="text-secondary font-sm mt-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-6 mb-3-sm">
+          <div class="footer-section-title">
+            <h4 class="text-secondary font-3xl fw-normal mb-4">Corporate</h4>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/index.html">Home</a>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="//">Flights</a>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="//">Hotels</a>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/offers.html">Wayana</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-6 mb-3-sm">
+          <div class="footer-section-title">
+            <h4 class="text-secondary font-3xl fw-normal mb-4">Our Company</h4>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/about-us.html">About Us</a>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/terms.html">Terms & Conditions</a>
+          </div>
+          <div class="footer-item">
+            <img src="assets/images/icons/white-arrow.svg" class="of-contain me-2" height="10px" alt="">
+            <a href="/privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3-sm">
+          <div class="footer-section-title">
+            <h4 class="text-secondary font-3xl fw-normal mb-4">Social Media</h4>
+          </div>
+          <div class="footer-item mb-4">
+            <div class="social-media">
+              <img src="assets/images/icons/Facebook.svg" class="of-contain" height="24px" alt="">
+            </div>
+            <a href="https://www.facebook.com">Facebook</a>
+          </div>
+          <div class="footer-item mb-4">
+            <div class="social-media">
+              <img src="assets/images/icons/Instagram.svg" class="of-contain" height="24px" alt="">
+            </div>
+            <a href="https://www.instagram.com">Instagram</a>
+          </div>
+          <div class="footer-item mb-4">
+            <div class="social-media">
+              <img src="assets/images/icons/YouTube.svg" class="of-contain" height="24px" alt="">
+            </div>
+            <a href="https://www.youtube.com">YouTube</a>
+          </div>
+        </div>
+      </div>
+      <div class="lower-footer">
+        <div class="d-flex flex-wrap align-items-center justify-content-md-between justify-content-lg-between justify-content-xl-between justify-content-center">
+          <h5 class="text-secondary font-normal fw-sm mb-3-sm">All Rights Reserved To Hojuzaty © 2024</h5>
+          <div class="d-flex align-items-center">
+            <a href="#" class="me-3">
+              <img src="assets/images/icons/apple-pay.svg" height="30px" class="of-contain" alt="">
+            </a>
+            <a href="#" class="me-3">
+              <img src="assets/images/icons/visa.svg" height="30px" class="of-contain" alt="">
+            </a>
+            <a href="#" class="me-3">
+              <img src="assets/images/icons/Mastercard.svg" height="30px" class="of-contain" alt="">
+            </a>
+            <a href="#" class="me-3">
+              <img src="assets/images/icons/Mada.svg" height="30px" class="of-contain" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/bootstrap/bootstrap.js"></script>
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"></script>
+  <script src="assets/js/intlTelInput.js"></script>
+  <script src="assets/js/select2.js"></script>
+  <script src="assets/js/fancybox.js"></script>
+  <script src="assets/js/flatpicker.js"></script>
+  <script src="assets/js/owl.carousel.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

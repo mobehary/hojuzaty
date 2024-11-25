@@ -15,6 +15,13 @@
 }
 
 @media(max-width: 550px) {
+    #loader{
+        div{
+            img{
+                height: 140px !important;
+            }
+        }
+    }
     p{
         font-size: 14px !important;
     }

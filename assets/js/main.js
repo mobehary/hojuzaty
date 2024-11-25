@@ -20,6 +20,12 @@ title.forEach(element => {
   }
 });
 
+function preloader_end() {
+  $('#loader').fadeOut();
+  $('#loader-mask').delay(350).fadeOut('slow');
+};
+window.addEventListener("load", preloader_end);
+
 
 var verificationCode = [];
 
@@ -241,4 +247,4 @@ var input = document.querySelector("#mobile-number");
     initialCountry: "in",
 	separateDialCode: true,
     utilsScript: true,
-  });
+});

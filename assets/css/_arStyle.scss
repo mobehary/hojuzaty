@@ -1,3 +1,84 @@
 [lang="ar"] *{
     font-family: 'Swissra';
 }
+
+[lang="ar"] .footer-item{
+    img{
+        transform: rotate(180deg);
+    }
+}
+[lang="ar"] .sub-title{
+    img{
+        transform: rotate(180deg);
+    }
+}
+[lang="ar"] .footer-item{
+    .social-media{
+        img{
+            transform: rotate(0deg);
+        }
+    }
+}
+[lang="ar"] .input-group{
+    .input-group-text{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 5px !important;
+        border-bottom-right-radius: 5px !important;
+    }
+    .included-input{
+        border-left: unset;
+        border-right: 0;
+        border-radius: 5px 0px 0px 5px !important;
+    }
+}
+
+[lang="ar"] .breadcrumb-div{
+    img.of-contain.mx-1{
+        transform: rotate(180deg);
+    }
+}
+[lang="ar"] .luggage-div{
+    padding: 15px 20px 15px 50px;
+}
+[lang="ar"] .form-select{
+    padding: .375rem .75rem .375rem 2.25rem;
+}
+[lang="ar"] .iti--inline-dropdown .iti__dropdown-content{
+    left: 0;
+}
+[lang="ar"] .left-side{
+    border-right: unset;
+    border-left: 2px dashed #D0D0D0;
+}
+[lang="ar"] .left-side .airline{
+    left: unset;
+    right: 0;
+}
+[lang="ar"] .vertical-line{
+    left: unset;
+    right: 82px;
+}
+[lang="ar"] .vertical-line.package-vertical{
+    left: unset;
+    right: 25px;
+}
+[lang="ar"] .terms-item{
+    img{
+        transform: rotate(180deg);
+    }
+}
+[lang="ar"] .domestic-details .owl-nav.disabled button span{
+    font-size: 30px;
+}
+[lang="ar"] .account .auth-card .eye{
+    right: unset;
+    left: 20px;
+}
+[lang="ar"] .fa-chevron-right{
+    transform: rotate(180deg);
+}
+[lang="ar"] .offer-card .badges{
+    left: unset;
+    right: 10px;
+}

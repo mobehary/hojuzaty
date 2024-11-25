@@ -2121,8 +2121,137 @@ footer .lower-footer {
   width: 100%;
 }
 
+#loader-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #532259;
+  z-index: 10000000000000000000000000000000;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  display: inline-block;
+  margin: -25px 0 0 -25px;
+  text-indent: -9999em;
+  transform: translateZ(0);
+}
+
+#loader div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  animation: ballPulseDouble 2s ease-in-out infinite;
+}
+#loader div img {
+  height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#loader div:last-child {
+  animation-delay: -1s;
+}
+@keyframes ballPulseDouble {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
 [lang=ar] * {
   font-family: "Swissra";
+}
+
+[lang=ar] .footer-item img {
+  transform: rotate(180deg);
+}
+
+[lang=ar] .sub-title img {
+  transform: rotate(180deg);
+}
+
+[lang=ar] .footer-item .social-media img {
+  transform: rotate(0deg);
+}
+
+[lang=ar] .input-group .input-group-text {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+[lang=ar] .input-group .included-input {
+  border-left: unset;
+  border-right: 0;
+  border-radius: 5px 0px 0px 5px !important;
+}
+
+[lang=ar] .breadcrumb-div img.of-contain.mx-1 {
+  transform: rotate(180deg);
+}
+
+[lang=ar] .luggage-div {
+  padding: 15px 20px 15px 50px;
+}
+
+[lang=ar] .form-select {
+  padding: 0.375rem 0.75rem 0.375rem 2.25rem;
+}
+
+[lang=ar] .iti--inline-dropdown .iti__dropdown-content {
+  left: 0;
+}
+
+[lang=ar] .left-side {
+  border-right: unset;
+  border-left: 2px dashed #D0D0D0;
+}
+
+[lang=ar] .left-side .airline {
+  left: unset;
+  right: 0;
+}
+
+[lang=ar] .vertical-line {
+  left: unset;
+  right: 82px;
+}
+
+[lang=ar] .vertical-line.package-vertical {
+  left: unset;
+  right: 25px;
+}
+
+[lang=ar] .terms-item img {
+  transform: rotate(180deg);
+}
+
+[lang=ar] .domestic-details .owl-nav.disabled button span {
+  font-size: 30px;
+}
+
+[lang=ar] .account .auth-card .eye {
+  right: unset;
+  left: 20px;
+}
+
+[lang=ar] .fa-chevron-right {
+  transform: rotate(180deg);
+}
+
+[lang=ar] .offer-card .badges {
+  left: unset;
+  right: 10px;
 }
 
 @media (max-width: 360px) {
@@ -2131,6 +2260,9 @@ footer .lower-footer {
   }
 }
 @media (max-width: 550px) {
+  #loader div img {
+    height: 140px !important;
+  }
   p {
     font-size: 14px !important;
   }

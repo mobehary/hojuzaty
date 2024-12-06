@@ -9,6 +9,46 @@ $("#switcher").click(function() {
     $("#takingOff").val(landing);
 });
 
+
+
+
+$(document).ready(function() {
+  $('input[name="round-trip"]').on('change', function() {
+      if ($('#round-trip').is(':checked')) {
+          $('#return-date').removeClass("d-none");
+      } else {
+          $('#return-date').addClass("d-none");
+      }
+      if ($('#multi-cities').is(':checked')) {
+          $('#another-reservation').removeClass("d-none");
+          $('#repeater-link').removeClass("d-none");
+      } else {
+          $('#another-reservation').addClass("d-none");
+          $('#repeater-link').addClass("d-none");
+      }
+  });
+});
+
+
+// $('#repeater').click(function(e) {
+//   e.preventDefault();
+//   $('#another-reservation').clone().removeClass('d-none').appendTo('#another-reservation');
+// });
+// $('#repeat-reservation').click(function(e) {
+//   e.preventDefault();
+//   $('#repeated-div').clone().after('#repeated-div');
+// });
+
+$(".hotel-reservation").change(function() {
+  var code = $(this).find(":selected").val();
+  if(code === "other") {
+    $("#travellers_and_class").removeClass("d-none");
+  }
+  else{
+    $("#travellers_and_class").addClass("d-none");
+  }
+});
+
 let title = document.querySelectorAll('.personal-title .item');
 
 title.forEach(element => {

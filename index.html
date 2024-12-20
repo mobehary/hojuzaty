@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
   <!-- <link rel="stylesheet" href="assets/bootstrap/bootstrap-rtl.css"> -->
   <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.repeater/jquery.repeater.css">
   <link rel="stylesheet" href="assets/css/select2.css">
   <link rel="stylesheet" href="assets/css/flatPicker.css">
   <link rel="stylesheet" href="assets/css/owl.carousel.css">
@@ -276,48 +277,50 @@
                         </div>
                       </div>
                     </div>
-                    <div class="mt-3 row d-none" id="another-reservation">
-                      <div class="col-md-6 col-lg-6 col-xl-5 col-12 mb-3">
-                        <div class="form-groups">
-                          <div class="form-group">
-                            <label class="mb-1 text-secondary font-sm fw-sm">Taking Off</label>
-                            <div class="input-group position-relative">
-                              <span class="input-group-text" id="basic-addon1">
-                                <img src="assets/images/icons/TakingOff.svg" height="20px" class="of-contain" alt="">
-                              </span>
-                              <input type="text" id="takingOff" class="form-control included-input" aria-describedby="basic-addon1" placeholder="City or Airport">
+                    <div class="d-none" id="reservation-container">
+                      <div class="mt-3 row" id="another-reservation">
+                        <div class="col-md-6 col-lg-6 col-xl-5 col-12 mb-3">
+                          <div class="form-groups">
+                            <div class="form-group">
+                              <label class="mb-1 text-secondary font-sm fw-sm">Taking Off</label>
+                              <div class="input-group position-relative">
+                                <span class="input-group-text" id="basic-addon1">
+                                  <img src="assets/images/icons/TakingOff.svg" height="20px" class="of-contain" alt="">
+                                </span>
+                                <input type="text" id="takingOff" class="form-control included-input" aria-describedby="basic-addon1" placeholder="City or Airport">
+                              </div>
                             </div>
-                          </div>
-                          <div class="d-flex align-items-center justify-content-center mt-4" style="width: 10%;">
-                            <img src="assets/images/icons/switch.svg" id="switcher" height="18px" class="of-contain" alt="">
-                          </div>
-                          <div class="form-group">
-                            <label class="mb-1 text-secondary font-sm fw-sm">Landing</label>
-                            <div class="input-group position-relative">
-                              <span class="input-group-text" id="basic-addon2">
-                                <img src="assets/images/icons/Landing.svg" height="20px" class="of-contain" alt="">
-                              </span>
-                              <input type="text" id="landing" class="form-control included-input" aria-describedby="basic-addon2" placeholder="City or Airport">
+                            <div class="d-flex align-items-center justify-content-center mt-4" style="width: 10%;">
+                              <img src="assets/images/icons/switch.svg" id="switcher" height="18px" class="of-contain" alt="">
+                            </div>
+                            <div class="form-group">
+                              <label class="mb-1 text-secondary font-sm fw-sm">Landing</label>
+                              <div class="input-group position-relative">
+                                <span class="input-group-text" id="basic-addon2">
+                                  <img src="assets/images/icons/Landing.svg" height="20px" class="of-contain" alt="">
+                                </span>
+                                <input type="text" id="landing" class="form-control included-input" aria-describedby="basic-addon2" placeholder="City or Airport">
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="col-md-6 col-lg-6 col-xl-7 col-12 mb-3">
-                        <div class="row justify-content-start">
-                          <div class="col-md-12 col-lg-3 col-xl-3 col-12 mb-3-sm">
-                            <label class="mb-1 text-secondary font-sm fw-sm">Departure Date</label>
-                            <div class="input-group position-relative">
-                              <span class="input-group-text" id="basic-addon3">
-                                <img src="assets/images/icons/Calendar.svg" height="20px" class="of-contain" alt="">
-                              </span>
-                              <input type="date" class="form-control flatPicker included-input ps-2" aria-describedby="basic-addon3" placeholder="Pick a Date">
+                        <div class="col-md-6 col-lg-6 col-xl-7 col-12 mb-3">
+                          <div class="row justify-content-start">
+                            <div class="col-md-12 col-lg-3 col-xl-3 col-12 mb-3-sm">
+                              <label class="mb-1 text-secondary font-sm fw-sm">Departure Date</label>
+                              <div class="input-group position-relative">
+                                <span class="input-group-text" id="basic-addon3">
+                                  <img src="assets/images/icons/Calendar.svg" height="20px" class="of-contain" alt="">
+                                </span>
+                                <input type="date" class="form-control flatPicker included-input ps-2" aria-describedby="basic-addon3" placeholder="Pick a Date">
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="pb-4 d-none" id="repeater-link">
-                      <a href="#" id="repeater" class="text-acent font-normal">+ Add More</a>
+                      <a href="javascript:void(0)" id="add-reservation" class="text-acent font-normal">+ Add More</a>
                     </div>
                     <div class="stop-flights">
                       <div class="d-flex align-items-center">
@@ -833,6 +836,7 @@
   <script src="assets/js/select2.js"></script>
   <script src="assets/js/fancybox.js"></script>
   <script src="assets/js/flatpicker.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.repeater/jquery.repeater.min.js"></script>
   <script src="assets/js/owl.carousel.js"></script>
   <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>

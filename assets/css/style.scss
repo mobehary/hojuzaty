@@ -4,12 +4,13 @@
 .home-header{
     .linear-background{
         background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+        // min-height: 100vh;
         height: 100%;
         width: 100%;
     }
     background-size: cover;
     background-position: top;
-    height: 100vh;
+    // min-height: 100vh;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     animation: slider-animate 10s infinite alternate;
@@ -202,7 +203,7 @@ i{
 }
 
 .hero-content{
-    position: absolute;
+    // position: absolute;
     bottom: 0;
     width: 100%;
     .hero-title{

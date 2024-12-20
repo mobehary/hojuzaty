@@ -20,24 +20,39 @@ $(document).ready(function() {
           $('#return-date').addClass("d-none");
       }
       if ($('#multi-cities').is(':checked')) {
-          $('#another-reservation').removeClass("d-none");
+          $('#reservation-container').removeClass("d-none");
           $('#repeater-link').removeClass("d-none");
       } else {
-          $('#another-reservation').addClass("d-none");
+          $('#reservation-container').addClass("d-none");
           $('#repeater-link').addClass("d-none");
       }
   });
 });
 
+$(document).ready(function() {
+  $('#reservation-container').repeater({
+    defaultValues: {
+      
+    },
+    show: function () {
+      $(this).slideDown();
+    },
+    hide: function (remove) {
+      $(this).slideUp(remove);
+    },
+    isFirstItemUndeletable: true,
+    selector: '.repeater'
+  });
 
-// $('#repeater').click(function(e) {
-//   e.preventDefault();
-//   $('#another-reservation').clone().removeClass('d-none').appendTo('#another-reservation');
-// });
-// $('#repeat-reservation').click(function(e) {
-//   e.preventDefault();
-//   $('#repeated-div').clone().after('#repeated-div');
-// });
+  $('#add-reservation').click(function() {
+    var newReservation = $('#another-reservation').clone();
+    newReservation.find('input').val('');
+    $('#reservation-container').append(newReservation);
+  });
+  $('#remove').click(function() {
+    $(this).closest('.repeater').remove();
+  });
+});
 
 $(".hotel-reservation").change(function() {
   var code = $(this).find(":selected").val();

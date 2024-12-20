@@ -723,7 +723,6 @@ section {
 .home-header {
   background-size: cover;
   background-position: top;
-  height: 100vh;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   animation: slider-animate 10s infinite alternate;
@@ -915,7 +914,6 @@ i {
 }
 
 .hero-content {
-  position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -2287,9 +2285,6 @@ footer .lower-footer {
   }
   .retrive .content p {
     font-size: 14px;
-  }
-  .home-header {
-    height: 850px;
   }
   .d-none-sm {
     display: none;

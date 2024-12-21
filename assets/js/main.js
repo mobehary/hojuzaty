@@ -54,6 +54,27 @@ $(document).ready(function() {
   });
 });
 
+$('.counter-btn').click(function (e) { 
+  e.stopPropagation();
+ });
+
+ $(document).ready(function() {
+
+  $(".increase").click(function() {
+      let target = $(this).data("target");
+      let currentValue = $("#" + target).text();
+      $("#" + target).text(parseInt(currentValue) + 1);
+  });
+
+  $(".decrease").click(function() {
+      let target = $(this).data("target");
+      let currentValue = $("#" + target).text();
+      if (parseInt(currentValue) > 0) {
+          $("#" + target).text(parseInt(currentValue) - 1);
+      }
+  });
+});
+
 $(".hotel-reservation").change(function() {
   var code = $(this).find(":selected").val();
   if(code === "other") {

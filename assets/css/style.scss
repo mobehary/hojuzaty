@@ -16,6 +16,51 @@
     animation: slider-animate 10s infinite alternate;
 }
 
+.adults-div{
+    height: 50px;
+    .adults-counter{
+        background-color: #FFF;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .dropdown-toggle{
+        color: #666666;
+        font-size: 14px;
+    }
+    .dropdown-item{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3px 10px;
+        &:active{
+            background-color: #FFF;
+            color: $primary-color !important;
+        }
+    }
+    .counter-btn{
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: $acent-color;
+        border: 1px solid $acent-color;
+        i{
+            color: #FFF;
+            font-size: 12px;
+        }
+    }
+    .counter{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+    }
+}
+
+
 .breadcrumb-div{
     margin-top: 15px;
     display: flex;

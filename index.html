@@ -259,19 +259,59 @@
                           </div>
                           <div class="col-md-12 col-lg-4 col-xl-4 col-12 mb-3-sm mt-md-3 mt-lg-0">
                             <label class="mb-1 text-secondary font-sm fw-sm">Travellers & Class</label>
-                            <div class="input-group position-relative">
+                            <div class="input-group position-relative mb-1">
                               <span class="input-group-text" id="basic-addon3">
                                 <img src="assets/images/icons/User-dark.svg" height="20px" class="of-contain" alt="">
                               </span>
                               <select name="" class="niceSelect included-input form-control" id="">
-                                <option value="" disabled selected>Travelers, Class</option>
-                                <option value="">VIP</option>
-                                <option value="">Class A</option>
-                                <option value="other">Other</option>
+                                <option value="" disabled>Travelers, Class</option>
+                                <option value="" selected>Economy</option>
+                                <option value="">Premium Economy</option>
+                                <option value="">Business</option>
+                                <option value="">First</option>
                               </select>
                             </div>
+                            <div class="input-group position-relative mb-1 adults-div">
+                              <span class="input-group-text w-20" id="basic-addon3">
+                                <img src="assets/images/icons/User-dark.svg" height="20px" class="of-contain" alt="">
+                              </span>
+                              <div class="btn-group adults-counter w-80">
+                                <button class="btn text-start dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Passengers
+                                </button>
+                                <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                                  <li>
+                                    <div class="dropdown-item"><span>Adults</span>
+                                      <div class="counter">
+                                        <button type="button" class="increase counter-btn" data-target="adults"><i class="fa fa-plus"></i></button>
+                                        <span class="count-num" id="adults">0</span>
+                                        <button type="button" class="decrease counter-btn" data-target="adults"><i class="fa fa-minus"></i></button>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="dropdown-item"><span>Children</span>
+                                      <div class="counter">
+                                        <button type="button" class="increase counter-btn" data-target="children"><i class="fa fa-plus"></i></button>
+                                        <span class="count-num" id="children">0</span>
+                                        <button type="button" class="decrease counter-btn" data-target="children"><i class="fa fa-minus"></i></button>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="dropdown-item"><span>Infants</span>
+                                      <div class="counter">
+                                        <button type="button" class="increase counter-btn" data-target="infants"><i class="fa fa-plus"></i></button>
+                                        <span class="count-num" id="infants">0</span>
+                                        <button type="button" class="decrease counter-btn" data-target="infants"><i class="fa fa-minus"></i></button>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
-                          <div class="col-md-12 col-lg-2 col-xl-2 col-12 mb-3-sm d-flex align-items-end  mt-md-3 mt-lg-0">
+                          <div class="col-md-12 col-lg-2 col-xl-2 col-12 mb-3-sm d-flex align-items-start  mt-md-3 mt-lg-4">
                             <button type="submit" class="main-btn">Search</button>
                           </div>
                         </div>
